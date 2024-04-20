@@ -1,1 +1,1 @@
-# GolfCourseMaps
+# golf_course_maps
