@@ -7,7 +7,7 @@ library(stringr)
 }
 
 # read in geojson file(s)
-hole <- st_read("data/geojson/erin_hills.geojson") %>%
+hole <- st_read("data/geojson/fieldstone.geojson") %>%
     rename(polygon_name = name)
 
 course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")    
@@ -49,7 +49,7 @@ hole$color <- as.factor(hole$color)
 
 # generate ggplot map
 ggplot() +
-  geom_sf(data = hole, aes(fill = color), color = "black") +  # Polygon
+  geom_sf(data = hole, aes(fill = color), color = "black") + 
   #geom_sf(data = points, color = "black", size = 3, shape = 20) +   # Points
   geom_text(data = filter(hole, grepl("green", polygon_name)), 
             aes(x = st_coordinates(centroid)[, 1], 
@@ -57,12 +57,14 @@ ggplot() +
                 label = gsub(".*_hole_(\\d+)_.*", "\\1", polygon_name)), 
             size = 3, color = "black", fontface = "bold", hjust = 0.5, vjust = 0.5) +
   scale_fill_identity(name = "Color", guide = "legend", labels = levels(hole$polygon_type)) + # Specify legend fill manually
-  theme_minimal() +  # Remove background and gridlines
-  theme(axis.title.x = element_blank(),   # Remove x-axis label
-      axis.title.y = element_blank(),   # Remove y-axis label
-     axis.text.x = element_blank(),    # Remove x-axis text
-    axis.text.y = element_blank(),    # Remove y-axis text
-   panel.grid.major = element_blank(),  # Remove major gridlines
-  panel.grid.minor = element_blank()) +  # Remove minor gridlines
+  theme_minimal() + # Remove background and gridlines
+  theme(axis.title.x = element_blank(), # Remove x-axis label
+      axis.title.y = element_blank(), # Remove y-axis label
+     axis.text.x = element_blank(), # Remove x-axis text
+    axis.text.y = element_blank(), # Remove y-axis text
+   panel.grid.major = element_blank(), # Remove major gridlines
+  panel.grid.minor = element_blank()) + # Remove minor gridlines
   theme(legend.position = "none") +
-  labs(title = "Erin Hills | Hartford, WI")
+  labs(title = paste0(hole$course_name, " | ", hole$city, " - ", hole$state))
+
+view(hole)
