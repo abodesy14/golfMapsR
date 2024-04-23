@@ -6,28 +6,35 @@ library(ggplot2)
 library(stringr)
 }
 
-# read in geojson file(s)
-hole <- st_read("data/geojson/fieldstone.geojson") %>%
+# set course name to singular course for plotting
+# only necessary outside of Shiny environment
+set_course_name <- "Erin Hills"
+
+# list files in geojson folder
+geojson_files <- list.files("data/geojson", pattern = "geojson", full.names = TRUE)
+
+# read and combine files
+geojson_df <- bind_rows(lapply(geojson_files, st_read)) %>%
     rename(polygon_name = name)
 
+# read in mapped courses file
 course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")    
 
-
-# Extracting the desired substring before "hole" and removing underscores
-hole$course_name <- str_match(hole$polygon_name, "^(.+)_hole")[,2]  # extract substring before "_hole"
+# extracting course name from polygon name
+geojson_df$course_name <- str_match(geojson_df$polygon_name, "^(.+)_hole")[,2]  # extract substring before "_hole"
 
 # join in course db file to get additional course information
-hole <- left_join(hole, course_db, by = "course_name")
+geojson_df <- left_join(geojson_df, course_db, by = "course_name")
 
-hole$course_name <- gsub("_", " ", hole$course_name) # replace underscores with spaces           
-hole$course_name <- str_to_title(hole$course_name)
+geojson_df$course_name <- gsub("_", " ", geojson_df$course_name)        
+geojson_df$course_name <- str_to_title(geojson_df$course_name)
 
 # reproject to a suitable CRS if necessary
 # changing zone number rotates map
-hole <- st_transform(hole, "+proj=utm +zone=44 +datum=WGS84")
+geojson_df <- st_transform(geojson_df, "+proj=utm +zone=44 +datum=WGS84")
 
 # supply colors to each polygon type
-hole <- hole %>%
+geojson_df <- geojson_df %>%
   mutate(color = case_when(
     grepl("tee", polygon_name) ~ "#57B740",
     grepl("bunker", polygon_name) ~ "#EDE6D3",
@@ -41,22 +48,31 @@ hole <- hole %>%
     grepl("fairway", polygon_name) ~ "Fairway",
     grepl("green", polygon_name) ~ "Green",
     grepl("bunker", polygon_name) ~ "Bunker",
-    grepl("water", polygon_name) ~ "Water")) %>%
+    grepl("water", polygon_name) ~ "Water",
+    grepl("hazard", polygon_name) ~ "Hazard")) %>%
   mutate(centroid = st_centroid(geometry))
 
-# format polygon color as factor
-hole$color <- as.factor(hole$color)
+# regex to retrieve hole number from polygon name
+geojson_df$hole_num <- gsub(".*_hole_(\\d+)_.*", "\\1", geojson_df$polygon_name)
+
+# format polygon color and hole number as factor
+geojson_df$color <- as.factor(geojson_df$color)
+geojson_df$hole_num <- as.factor(geojson_df$hole_num)
+
+# filter data frame to set variable
+geojson_df <- geojson_df %>%
+    filter(course_name == set_course_name)
 
 # generate ggplot map
 ggplot() +
-  geom_sf(data = hole, aes(fill = color), color = "black") + 
+  geom_sf(data = geojson_df, aes(fill = color), color = "black") + 
   #geom_sf(data = points, color = "black", size = 3, shape = 20) +   # Points
-  geom_text(data = filter(hole, grepl("green", polygon_name)), 
+  geom_text(data = filter(geojson_df, grepl("green", polygon_name)), 
             aes(x = st_coordinates(centroid)[, 1], 
                 y = st_coordinates(centroid)[, 2], 
-                label = gsub(".*_hole_(\\d+)_.*", "\\1", polygon_name)), 
+                label = hole_num), 
             size = 3, color = "black", fontface = "bold", hjust = 0.5, vjust = 0.5) +
-  scale_fill_identity(name = "Color", guide = "legend", labels = levels(hole$polygon_type)) + # Specify legend fill manually
+  scale_fill_identity(name = "Color", guide = "legend", labels = levels(geojson_df$polygon_type)) + # Specify legend fill manually
   theme_minimal() + # Remove background and gridlines
   theme(axis.title.x = element_blank(), # Remove x-axis label
       axis.title.y = element_blank(), # Remove y-axis label
@@ -65,6 +81,4 @@ ggplot() +
    panel.grid.major = element_blank(), # Remove major gridlines
   panel.grid.minor = element_blank()) + # Remove minor gridlines
   theme(legend.position = "none") +
-  labs(title = paste0(hole$course_name, " | ", hole$city, " - ", hole$state))
-
-view(hole)
+  labs(title = paste0(geojson_df$course_name, " | ", geojson_df$city, " , ", geojson_df$state))
