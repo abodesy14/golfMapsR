@@ -78,6 +78,7 @@ ggplot() +
       axis.title.y = element_blank(), # Remove y-axis label
      axis.text.x = element_blank(), # Remove x-axis text
     axis.text.y = element_blank(), # Remove y-axis text
+    plot.title = element_text(size = 16, family = "Big Caslon"),
    panel.grid.major = element_blank(), # Remove major gridlines
   panel.grid.minor = element_blank()) + # Remove minor gridlines
   theme(legend.position = "none") +
