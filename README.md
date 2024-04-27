@@ -4,7 +4,7 @@ Welcome to the <strong>golfMapsR</strong>, a repository dedicated to mapping gol
 
 <div style="display: flex;">
 <img src = "maps/erin_hills.png" width=500>
-<img src = "https://github.com/abodesy14/golfMapsR/assets/46985185/424b8c59-1971-474d-9a33-3f5feb176203" width=500>
+<img src = "https://github.com/abodesy14/golfMapsR/assets/46985185/424b8c59-1971-474d-9a33-3f5feb176203" width=400>
 </div>
 
 
