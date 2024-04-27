@@ -3,8 +3,8 @@
 Welcome to the <strong>golfMapsR</strong>, a repository dedicated to mapping golf courses using geographic data. Each golf course in this repo has been traced in Google Earth to capture various course elements such as fairways, greens, water hazards, bunkers, etc. These detailed polygon outlines are saved in KML and geoJSON formats to be read into R and plotted with ggplot2. 
 
 <div style="display: flex;">
-<img src = "https://github.com/abodesy14/golfMapsR/assets/46985185/2707b40b-bfbf-4a44-b326-0060d0ed6e71" width=500>
-<img src = "https://github.com/abodesy14/golfMapsR/assets/46985185/030e7bf4-1641-491d-bb76-096e11f6a83f" width=500>
+<img src = "maps/erin_hills.png" width=500>
+<img src = "https://github.com/abodesy14/golfMapsR/assets/46985185/424b8c59-1971-474d-9a33-3f5feb176203" width=500>
 </div>
 
 
@@ -17,7 +17,7 @@ To get started, clone this repo and use the generate_map.R script. The course ma
 ## Contributing
 Use the <strong>Issues</strong> template to request a new course mapping. 
 
-<strong>Disclaimer</strong>: The process of mapping golf courses in its current state can be time consuming. I would love for this repo to build up a database of mapped courses that can be used by golfers and/or programmers of all kinds. I myself don't have the bandwith to scale this repo at large, so if you have any interest in contributing to this project, please feel free to clone/fork and create a PR. I can also be reached at adam.c.beaudet@gmail.com.
+<strong>Disclaimer</strong>: The process of mapping golf courses in its current state can be time consuming. I would love for this repo to build up a database of mapped courses that can be used by golfers and/or programmers of all kinds. I myself don't have the bandwith to scale this repo at large, so if you have any interest in contributing to this project, please feel free to clone/fork and create a PR.
 
 ## Future Enhancements and Roadmap
 <li>Layer individual shots on top of these maps programatically. Currently, shot coordinates must be known to do so.</li>
