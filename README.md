@@ -18,10 +18,10 @@ Use the <strong>Issues</strong> template to request a new course mapping.
 
 <strong>Disclaimer</strong>: The process of mapping golf courses in its current state can be time consuming. I would love for this repo to build up a database of mapped courses that can be used by golfers and/or programmers of all kinds. I myself don't have the bandwith to scale this repo at large, so if you have any interest in contributing to this project, please feel free to clone/fork and create a PR.
 
-## Future Enhancements and Roadmap
+## Future Roadmap
 <li>Layer individual shots on top of maps more programatically. Currently, shot coordinates must be known to do so.</li>
 <li>Calculate area of polygon types for each course - this opens the door for course to course comparisons, such as: average green size, number of bunkers, average fairway size, amount of water/hazards, etc. To further iterate on this idea, these attributes could be modeled to a golfers performance. </li>
 <li>Computer vision to more programatically map courses</li>
 <li>Tree polygons - trees aren't currently outlined in this iteration of the project, but will be considered in the future.</li>
-<li>Create R package if project takes off</li>
+<li>Create R package</li>
 <li>Shiny App</li>
