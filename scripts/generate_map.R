@@ -21,7 +21,8 @@ geojson_df <- bind_rows(lapply(geojson_files, st_read)) %>%
 course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")    
 
 # extracting course name from polygon name
-geojson_df$course_name <- str_match(geojson_df$polygon_name, "^(.+)_hole")[,2]  # extract substring before "_hole"
+# extract substring before "_hole"
+geojson_df$course_name <- str_match(geojson_df$polygon_name, "^(.+)_hole")[,2]  
 
 # join in course db file to get additional course information
 geojson_df <- left_join(geojson_df, course_db, by = "course_name")
@@ -66,20 +67,19 @@ geojson_df <- geojson_df %>%
 # generate ggplot map
 ggplot() +
   geom_sf(data = geojson_df, aes(fill = color), color = "black") + 
-  #geom_sf(data = points, color = "black", size = 3, shape = 20) +   # Points
   geom_text(data = filter(geojson_df, grepl("green", polygon_name)), 
             aes(x = st_coordinates(centroid)[, 1], 
                 y = st_coordinates(centroid)[, 2], 
                 label = hole_num), 
             size = 3, color = "black", fontface = "bold", hjust = 0.5, vjust = 0.5) +
-  scale_fill_identity(name = "Color", guide = "legend", labels = levels(geojson_df$polygon_type)) + # Specify legend fill manually
-  theme_minimal() + # Remove background and gridlines
-  theme(axis.title.x = element_blank(), # Remove x-axis label
-      axis.title.y = element_blank(), # Remove y-axis label
-     axis.text.x = element_blank(), # Remove x-axis text
-    axis.text.y = element_blank(), # Remove y-axis text
+  scale_fill_identity(name = "Color", guide = "legend", labels = levels(geojson_df$polygon_type)) + 
+  theme_minimal() + 
+  theme(axis.title.x = element_blank(), 
+      axis.title.y = element_blank(),
+     axis.text.x = element_blank(), 
+    axis.text.y = element_blank(), 
     plot.title = element_text(size = 16, family = "Big Caslon"),
-   panel.grid.major = element_blank(), # Remove major gridlines
-  panel.grid.minor = element_blank()) + # Remove minor gridlines
+   panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank()) + 
   theme(legend.position = "none") +
   labs(title = paste0(geojson_df$course_name, " | ", geojson_df$city, " , ", geojson_df$state))
