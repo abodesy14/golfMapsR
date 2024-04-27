@@ -10,7 +10,7 @@ Welcome to the <strong>golfMapsR</strong>, a repository dedicated to mapping gol
 
 
 ## Usage
-To get started, clone this repo and use the generate_map.R script. The course mapping database is limited to those found at data/mapped_course_list/mapped_courses.csv. 
+To get started, clone this repo and use the generate_map.R script. The course mapping database is limited to those found at data/mapped_course_list/mapped_courses.csv. Use the set_course_name variable at the beginning of the script to select a course to render.
 
 
 ## Contributing
