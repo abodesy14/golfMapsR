@@ -30,9 +30,12 @@ geojson_df <- left_join(geojson_df, course_db, by = "course_name")
 geojson_df$course_name <- gsub("_", " ", geojson_df$course_name)        
 geojson_df$course_name <- str_to_title(geojson_df$course_name)
 
-# reproject to a suitable CRS if necessary
-# changing zone number rotates map
-geojson_df <- st_transform(geojson_df, "+proj=utm +zone=44 +datum=WGS84")
+# define a CRS for Lambert Conformal Conic projection so map always points due north
+crs <- "+proj=lcc +lat_1=33 +lat_2=45 +lat_0=39 +lon_0=-96 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs"
+
+# transform data to CRS
+geojson_df <- st_transform(geojson_df, crs)
+
 
 # supply colors to each polygon type
 geojson_df <- geojson_df %>%
