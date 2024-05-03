@@ -4,18 +4,23 @@ library(sf)
 library(tidyverse)
 library(ggplot2)
 library(stringr)
+library(geojsonsf)
 }
 
 # set course name to singular course for plotting
 # only necessary outside of Shiny environment
 set_course_name <- "Erin Hills"
 
-# list files in geojson folder
-geojson_files <- list.files("data/geojson", pattern = "geojson", full.names = TRUE)
+# list files in kml folder
+kml_files <- list.files("data/kml", pattern = "kml", full.names = TRUE)
 
 # read and combine files
-geojson_df <- bind_rows(lapply(geojson_files, st_read)) %>%
-    rename(polygon_name = name)
+kml_df <- bind_rows(lapply(kml_files, st_read)) %>%
+    rename(polygon_name = Name) %>%
+    select(polygon_name, geometry)
+
+# convert from kml to geojson
+geojson_df <- st_as_sf(kml_df, "POLYGON") 
 
 # read in mapped courses file
 course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")    
