@@ -86,7 +86,7 @@ ggplot() +
       axis.title.y = element_blank(),
      axis.text.x = element_blank(), 
     axis.text.y = element_blank(), 
-    plot.title = element_text(size = 16, family = "Big Caslon"),
+    plot.title = element_text(size = 16),
    panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank()) + 
   theme(legend.position = "none") +
