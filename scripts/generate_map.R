@@ -41,24 +41,15 @@ crs <- "+proj=lcc +lat_1=33 +lat_2=45 +lat_0=39 +lon_0=-96 +x_0=0 +y_0=0 +datum=
 # transform data to CRS
 geojson_df <- st_transform(geojson_df, crs)
 
-
 # supply colors to each polygon type
 geojson_df <- geojson_df %>%
   mutate(color = case_when(
-    grepl("tee", polygon_name) ~ "#57B740",
-    grepl("bunker", polygon_name) ~ "#EDE6D3",
-    grepl("water", polygon_name) ~ "#2243b6",
-    grepl("fairway", polygon_name) ~ "#57B740",
-    grepl("green", polygon_name) ~ "#86D14A",
-    grepl("hazard", polygon_name) ~ "#094d1d"
-  ),
-  polygon_type = case_when(
-    grepl("tee", polygon_name) ~ "Tee",
-    grepl("fairway", polygon_name) ~ "Fairway",
-    grepl("green", polygon_name) ~ "Green",
-    grepl("bunker", polygon_name) ~ "Bunker",
-    grepl("water", polygon_name) ~ "Water",
-    grepl("hazard", polygon_name) ~ "Hazard")) %>%
+    grepl("_tee$", polygon_name) ~ "#57B740",
+    grepl("_bunker$", polygon_name) ~ "#EDE6D3",
+    grepl("_water$", polygon_name) ~ "#2243b6",
+    grepl("_fairway$", polygon_name) ~ "#57B740",
+    grepl("_green$", polygon_name) ~ "#86D14A",
+    grepl("_hazard$", polygon_name) ~ "#094d1d")) %>%
   mutate(centroid = st_centroid(geometry))
 
 # regex to retrieve hole number from polygon name
@@ -75,7 +66,7 @@ geojson_df <- geojson_df %>%
 # generate ggplot map
 ggplot() +
   geom_sf(data = geojson_df, aes(fill = color), color = "black") + 
-  geom_text(data = filter(geojson_df, grepl("green", polygon_name)), 
+  geom_text(data = filter(geojson_df, grepl("_green", polygon_name)), 
             aes(x = st_coordinates(centroid)[, 1], 
                 y = st_coordinates(centroid)[, 2], 
                 label = hole_num), 
