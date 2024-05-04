@@ -16,7 +16,7 @@ To get started, clone this repo and use the <strong>generate_map.R</strong> scri
 ## Contributing
 Use the <strong>Issues</strong> template to request a new course mapping. 
 
-<strong>Disclaimer</strong>: The process of mapping golf courses in its current state can be time consuming. With some combined effort, a nice database of plottable golf courses. I myself don't have the bandwith to scale this repo at large, so if you have any interest in contributing to this project, please feel free to clone/fork and create a PR. I can also be reached at adam.c.beaudet@gmail.com.
+<strong>Disclaimer</strong>: The process of mapping golf courses in its current state can be time consuming. With some combined effort, a nice database of plottable golf courses can be created. I myself don't have the bandwith to scale this repo at large, so if you have any interest in contributing to this project, please feel free to clone/fork and create a PR. I can also be reached at adam.c.beaudet@gmail.com.
 
 ## Future Roadmap
 <li>Layer individual shots on top of maps programatically with Plotly</li>
