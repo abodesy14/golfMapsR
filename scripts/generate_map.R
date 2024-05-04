@@ -71,7 +71,7 @@ ggplot() +
                 y = st_coordinates(centroid)[, 2], 
                 label = hole_num), 
             size = 3, color = "black", fontface = "bold", hjust = 0.5, vjust = 0.5) +
-  scale_fill_identity(name = "Color", guide = "legend", labels = levels(geojson_df$polygon_type)) + 
+  scale_fill_identity() + 
   theme_minimal() + 
   theme(axis.title.x = element_blank(), 
       axis.title.y = element_blank(),
