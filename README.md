@@ -1,6 +1,6 @@
 # golfMapsR
 
-Welcome to the <strong>golfMapsR</strong>, a repository dedicated to mapping golf courses using geographic data. Each golf course in this repo has been traced in Google Earth to capture various course elements such as tee boxes, fairways, bunkers, greens, and hazards. These detailed polygon outlines are saved in KML and geoJSON formats to be read into R and plotted with ggplot2. 
+Welcome to the <strong>golfMapsR</strong>, a repository dedicated to mapping golf courses using geographic data. Each golf course in this repo has been traced in Google Earth to capture various course elements such as tee boxes, fairways, bunkers, greens, and hazards. These detailed polygon outlines are saved as KML files to be read into R and plotted with ggplot2. 
 
 <p align="center">
   <img alt="Light" src="maps/erin_hills.png" width="45%">
