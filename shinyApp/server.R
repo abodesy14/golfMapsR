@@ -20,7 +20,7 @@ server <- function(input, output, session) {
                     y = st_coordinates(centroid)[, 2], 
                     label = gsub(".*_hole_(\\d+)_.*", "\\1", polygon_name)), 
                 size = 3, color = "black", fontface = "bold", hjust = 0.5, vjust = 0.5) +
-      scale_fill_identity(name = "Color", guide = "legend", labels = levels(map_subset$polygon_type)) + # specify legend fill
+      scale_fill_identity() + 
       theme_minimal() + # remove background and grid lines
       theme(axis.title.x = element_blank(), # remove x-axis label
             axis.title.y = element_blank(), # remove y-axis label
