@@ -66,7 +66,7 @@ geojson_df <- geojson_df %>%
 # generate ggplot map
 ggplot() +
   geom_sf(data = geojson_df, aes(fill = color), color = "black") + 
-  geom_text(data = filter(geojson_df, grepl("_green", polygon_name)), 
+  geom_text(data = filter(geojson_df, grepl("_green$", polygon_name)), 
             aes(x = st_coordinates(centroid)[, 1], 
                 y = st_coordinates(centroid)[, 2], 
                 label = hole_num), 
