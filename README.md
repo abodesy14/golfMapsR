@@ -12,6 +12,7 @@ Welcome to the <strong>golfMapsR</strong>, a repository dedicated to mapping gol
 ## Usage
 To get started, clone this repo and use the <strong>generate_map.R</strong> script, or navigate to the Shiny app to see which courses have been mapped: https://abodesy14.shinyapps.io/golfMapsR/ 
 
+For more detailed instructions on getting started, you can read my article here: https://medium.com/towards-data-science/plotting-golf-courses-in-r-with-google-earth-8ee8aa6f6293
 
 ## Contributing
 Use the <strong>Issues</strong> template to request a new course mapping. 
