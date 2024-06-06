@@ -1,9 +1,10 @@
 ﻿course_id,course_name,city,state, trace_date
-10001,erin_hills,Hartford,WI,2024-04-26
-10002,fieldstone,Auburn Hills,MI,2024-04-22
-10003,pine_trace,Rochester Hills,MI,2024-04-23
-10004,augusta_national,Augusta,GA,2024-04-27
-10005,kiawah_island_ocean_course,Kiawah Island,SC,2024-04-28
-10006,tpc_craig_ranch,McKinney,TX,2024-05-05
-10007,quail_hollow,Charlotte,NC,2024-05-10
-10008,valhalla,Louisville,KY,2024-05-14
+10001,erin_hills,Hartford,WI,4/26/24
+10002,fieldstone,Auburn Hills,MI,4/22/24
+10003,pine_trace,Rochester Hills,MI,4/23/24
+10004,augusta_national,Augusta,GA,4/27/24
+10005,kiawah_island_ocean_course,Kiawah Island,SC,4/28/24
+10006,tpc_craig_ranch,McKinney,TX,5/5/24
+10007,quail_hollow,Charlotte,NC,5/10/24
+10008,valhalla,Louisville,KY,5/14/24
+10009,murfield_village,Dublin,OH,6/5/24
