@@ -50,7 +50,7 @@ geojson_df <- geojson_df %>%
     grepl("_fairway$", polygon_name) ~ "#57B740",
     grepl("_green$", polygon_name) ~ "#86D14A",
     grepl("_hazard$", polygon_name) ~ "#094d1d")) %>%
-  mutate(centroid = st_centroid(geometry))
+  mutate(centroid = st_centroid(geometry)) 
 
 # regex to retrieve hole number from polygon name
 geojson_df$hole_num <- gsub(".*_hole_(\\d+)_.*", "\\1", geojson_df$polygon_name)
@@ -62,6 +62,10 @@ geojson_df$hole_num <- as.factor(geojson_df$hole_num)
 # filter data frame to set variable
 geojson_df <- geojson_df %>%
     filter(course_name == set_course_name)
+
+# Area Calculation + Analysis (with retaining sf structure)
+geojson_df$area <- st_area(geojson_df)  # calculate area in square meters
+geojson_df$total_sq_ft <- as.numeric(geojson_df$area) * 10.7639  # convert to square feet
 
 # generate ggplot map
 ggplot() +
@@ -82,3 +86,5 @@ ggplot() +
   panel.grid.minor = element_blank()) + 
   theme(legend.position = "none") +
   labs(title = paste0(geojson_df$course_name, " | ", geojson_df$city, " , ", geojson_df$state))
+
+
