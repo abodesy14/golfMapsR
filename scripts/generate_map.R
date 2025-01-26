@@ -69,22 +69,25 @@ geojson_df$total_sq_ft <- as.numeric(geojson_df$area) * 10.7639  # convert to sq
 
 # generate ggplot map
 ggplot() +
-  geom_sf(data = geojson_df, aes(fill = color), color = "black") + 
+  # plot all polygons first
+  geom_sf(data = geojson_df, aes(fill = color), color = "black") +
+  # verlay greens on top
+  geom_sf(data = filter(geojson_df, grepl("_green$", polygon_name)), 
+          aes(geometry = geometry), fill = "#86D14A", color = "black") +
+  # add hole numbers on greens
   geom_text(data = filter(geojson_df, grepl("_green$", polygon_name)), 
-            aes(x = st_coordinates(centroid)[, 1], 
-                y = st_coordinates(centroid)[, 2], 
+            aes(x = st_coordinates(st_centroid(geometry))[,1], 
+                y = st_coordinates(st_centroid(geometry))[,2], 
                 label = hole_num), 
             size = 3, color = "black", fontface = "bold", hjust = 0.5, vjust = 0.5) +
-  scale_fill_identity() + 
-  theme_minimal() + 
+  scale_fill_identity() +
+  theme_minimal() +
   theme(axis.title.x = element_blank(), 
-      axis.title.y = element_blank(),
-     axis.text.x = element_blank(), 
+    axis.title.y = element_blank(),
+    axis.text.x = element_blank(), 
     axis.text.y = element_blank(), 
     plot.title = element_text(size = 16),
-   panel.grid.major = element_blank(), 
+    panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank()) + 
   theme(legend.position = "none") +
   labs(title = paste0(geojson_df$course_name, " | ", geojson_df$city, " , ", geojson_df$state))
-
-
