@@ -1,3 +1,4 @@
+# load libraries
 {
   library(sf)
   library(tidyverse)
@@ -13,15 +14,14 @@
   library(magick)
 }
 
-# list files in geojson folder
+# list files in kml data folder
 # shinyapps.io
-#kml_files <- list.files("data/kml", pattern = "\\kml$", full.names = TRUE, recursive = TRUE)
+kml_files <- list.files("data/kml", pattern = "\\kml$", full.names = TRUE, recursive = TRUE)
 # local testing
-kml_files <- list.files("/Users/adambeaudet/Github/golfMapsR/data/kml", pattern = "\\kml$", full.names = TRUE, recursive = TRUE)
-
+#kml_files <- list.files("/Users/adambeaudet/Github/golfMapsR/data/kml", pattern = "\\kml$", full.names = TRUE, recursive = TRUE)
 
 # read and combine files
-# sometimes unwanted polygons from osm get included that aren't true specific hole elements
+# sometimes unwanted polygons from osm get included that aren't true specific hole elements that we want to exclude
 kml_df <- bind_rows(lapply(kml_files, st_read)) %>%
   rename(polygon_name = Name) %>%
   filter(!(polygon_name %in% c("Practice green", "Practice Area", "Driving Range", "", "Putting Green")))
@@ -30,15 +30,16 @@ geojson_df <- st_as_sf(kml_df, "POLYGON")
 
 # read in mapped course db for course name, city, state, etc.
 # shinyapps.io
-#course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")
+course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")
 # local testing
-course_db <- read.csv("/Users/adambeaudet/Github/golfMapsR/data/mapped_course_list/mapped_courses.csv")
+#course_db <- read.csv("/Users/adambeaudet/Github/golfMapsR/data/mapped_course_list/mapped_courses.csv")
 
 # extracting course name from polygon name
 geojson_df$course_name <- str_match(geojson_df$polygon_name, "^(.+)_hole")[,2]  # extract substring before "_hole"
 
+# join and light data cleaning
 geojson_df <- left_join(geojson_df, course_db, by = "course_name")
-geojson_df$course_name <- gsub("_", " ", geojson_df$course_name) # replace underscores with spaces           
+geojson_df$course_name <- gsub("_", " ", geojson_df$course_name)       
 geojson_df$course_name <- str_to_title(geojson_df$course_name)
 
 geojson_df <- st_transform(geojson_df, "+proj=utm +zone=15 +datum=WGS84")
@@ -68,29 +69,21 @@ geojson_df$color <- as.factor(geojson_df$color)
 geojson_df$hole_num <- gsub(".*_hole_(\\d+)_.*", "\\1", geojson_df$polygon_name)
 geojson_df$course_name_concat <- paste0(geojson_df$course_name, " - ", geojson_df$city, ", ", geojson_df$state)
 
-
-
-
-
-# Area Calculation + Analysis (with retaining sf structure)
+# area/sq ft calculation (while retaining sf structure)
 geojson_df$area <- st_area(geojson_df)  # calculate area in square meters
 geojson_df$total_sq_ft <- as.numeric(geojson_df$area) * 10.7639  # convert to square feet
 
-
-
-
-
-
-# Filter out NA values and empty/whitespace strings explicitly
+# filter out NA values and empty/whitespace strings explicitly
 valid_courses <- unique(geojson_df$course_name_concat)
 valid_courses <- valid_courses[!is.na(valid_courses) & valid_courses != "" & valid_courses != "NA - NA, NA"]
 
+
+# ui
 ui <- fluidPage(
   add_busy_spinner(spin = "fading-circle"),
   theme = shinythemes::shinytheme("simplex"), 
   navbarPage(
     "golfMapsR",
-    # Select input outside the tabs for global course selection
     fluidRow(
       column(width = 3, 
              selectInput("course", "Choose Course:", 
@@ -98,14 +91,12 @@ ui <- fluidPage(
                          selected = "Erin Hills - Hartford, WI", 
                          multiple = FALSE))
     ),
-    
     tabPanel("Course Viewer", 
              fluidRow(
                column(width = 9, 
                       plotOutput("map", width = "100%", height = "90vh"))
              )
     ),
-    
     tabPanel("Hole by Hole",
              fluidRow(
                column(width = 12, 
@@ -115,7 +106,7 @@ ui <- fluidPage(
   )
 )
 
-
+# server
 server <- function(input, output, session) {
   
   output$map <- renderPlot({
@@ -142,23 +133,21 @@ server <- function(input, output, session) {
         axis.text.x = element_blank(), 
         axis.text.y = element_blank(), 
         plot.title = element_text(size = 16, family = "Big Caslon"),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        legend.position = "none"
-      ) +
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+        theme(legend.position = "none") + 
       labs(title = paste0(map_subset$course_name, " | ", map_subset$city, ", ",  map_subset$state))
     
   })
   
   
-  
   output$course_scorecard <- render_gt({
     scorecard_subset <- geojson_df %>% filter(course_name_concat == input$course)
     
-    # Fix any invalid geometries
+    # fix any invalid geometries
     scorecard_subset <- st_make_valid(scorecard_subset)
     
-    # Initialize the gt data frame
+    # initialize the gt data frame
     gt_data <- data.frame(
       course_name = character(),
       hole_num = numeric(),
@@ -168,24 +157,21 @@ server <- function(input, output, session) {
       stringsAsFactors = FALSE
     )
     
-    # Loop through each unique hole
+    # loop through each unique hole
     unique_holes <- unique(scorecard_subset$hole_num)
     for (hole in unique_holes) {
-      # Subset data for the current hole
+      # subset data for the current hole
       geojson_df_hole <- scorecard_subset %>% filter(hole_num == hole)
       
-      # Count bunkers and calculate green size
+      # count bunkers and calculate green size
       bunker_count <- sum(grepl("bunker", geojson_df_hole$course_element, ignore.case = TRUE))
-      green_sq_ft <- prettyNum(
-        round(sum(geojson_df_hole$total_sq_ft[grepl("green", geojson_df_hole$course_element, ignore.case = TRUE)])), 
-        big.mark = ","
-      )
+      green_sq_ft <- prettyNum(round(sum(geojson_df_hole$total_sq_ft[grepl("green", geojson_df_hole$course_element, ignore.case = TRUE)])), big.mark = ",")
       
-      # Plot the hole layout
+      # plot the hole layout
       plot <- ggplot() +
-        # Draw all course elements
+        # draw all course elements
         geom_sf(data = geojson_df_hole, aes(fill = color), color = "black") +
-        # overlay greens explicitly
+        # overlay greens
         geom_sf(
           data = geojson_df_hole %>% filter(grepl("green", course_element, ignore.case = TRUE)),
           aes(geometry = geometry),
@@ -194,14 +180,14 @@ server <- function(input, output, session) {
         scale_fill_identity() +
         theme_void()
       
-      # Save plot to a temporary file
+      # save plot to a temporary file
       filename <- tempfile(fileext = ".png")
       ggsave(filename, plot, width = 3, height = 3, units = "in")
       
-      # Encode the plot as a base64 string
-      plot_path <- base64enc::base64encode(readBin(filename, "raw", file.info(filename)$size))
+      # encode the plot as a base64 string
+      plot_path <- base64encode(readBin(filename, "raw", file.info(filename)$size))
       
-      # Add to gt_data
+      # add to gt_data
       gt_data <- rbind(gt_data, data.frame(
         course_name = geojson_df_hole$course_name[1],
         hole_num = hole,
@@ -212,19 +198,25 @@ server <- function(input, output, session) {
       ))
     }
     
-    # Convert hole_num to numeric for sorting
+    # convert hole_num to numeric for sorting
     gt_data$hole_num <- as.integer(gt_data$hole_num)
     
-    # Sort gt_data
+    # sort df so gt table can plot holes chronologically
     gt_data <- gt_data %>% arrange(hole_num)
     
-    # Render the gt table
+    # create and render gt table
     gt_table <- gt_data %>%
       gt() %>%
       tab_header(
         title = md(paste0("**", input$course, "**")),
-        subtitle = md(paste0("Course Layout as of: **", unique(scorecard_subset$trace_date), "**"))
-      ) %>%
+        # subtitle = md(paste0("Course Layout as of: **", unique(scorecard_subset$trace_date), "**"))
+        subtitle = md(paste0(
+        "Avg. Green Size: **", prettyNum(round(mean(as.numeric(gsub(",", "", gt_data$green_sq_ft)), na.rm = TRUE)), big.mark = ","), " sq ft**",
+        " | ",
+        "Bunkers: **", round(sum(as.numeric(gsub(",", "", gt_data$bunker_count)), na.rm = TRUE)), "**",
+        " | ",
+        "Trace Date: **", unique(scorecard_subset$trace_date), "**"))
+        ) %>%
       text_transform(
         locations = cells_body(columns = c(plot_path)),
         fn = function(x) {
