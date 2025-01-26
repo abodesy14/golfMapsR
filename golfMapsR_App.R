@@ -209,7 +209,6 @@ server <- function(input, output, session) {
       gt() %>%
       tab_header(
         title = md(paste0("**", input$course, "**")),
-        # subtitle = md(paste0("Course Layout as of: **", unique(scorecard_subset$trace_date), "**"))
         subtitle = md(paste0(
         "Avg. Green Size: **", prettyNum(round(mean(as.numeric(gsub(",", "", gt_data$green_sq_ft)), na.rm = TRUE)), big.mark = ","), " sq ft**",
         " | ",

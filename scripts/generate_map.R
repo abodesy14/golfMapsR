@@ -71,7 +71,7 @@ geojson_df$total_sq_ft <- as.numeric(geojson_df$area) * 10.7639  # convert to sq
 ggplot() +
   # plot all polygons first
   geom_sf(data = geojson_df, aes(fill = color), color = "black") +
-  # verlay greens on top
+  # overlay greens on top
   geom_sf(data = filter(geojson_df, grepl("_green$", polygon_name)), 
           aes(geometry = geometry), fill = "#86D14A", color = "black") +
   # add hole numbers on greens
