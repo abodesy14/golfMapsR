@@ -68,6 +68,7 @@ geojson_df$color <- as.factor(geojson_df$color)
 # create hole column
 geojson_df$hole_num <- gsub(".*_hole_(\\d+)_.*", "\\1", geojson_df$polygon_name)
 geojson_df$course_name_concat <- paste0(geojson_df$course_name, " - ", geojson_df$city, ", ", geojson_df$state)
+geojson_df$course_hole_concat <- paste0(geojson_df$course_name, " | ", geojson_df$hole_num)
 
 # area/sq ft calculation (while retaining sf structure)
 geojson_df$area <- st_area(geojson_df)  # calculate area in square meters
@@ -76,6 +77,27 @@ geojson_df$total_sq_ft <- as.numeric(geojson_df$area) * 10.7639  # convert to sq
 # filter out NA values and empty/whitespace strings explicitly
 valid_courses <- unique(geojson_df$course_name_concat)
 valid_courses <- valid_courses[!is.na(valid_courses) & valid_courses != "" & valid_courses != "NA - NA, NA"]
+
+# initialize the distance column (straight line distance, aka "as the crow flies")
+geojson_df$distance_to_green_yards <- NA  
+
+# loop through each course/hole combination
+for (hole in unique(geojson_df$course_hole_concat)) {
+  
+  # Filter polygons for the hole's elements and green
+  hole_elements <- filter(geojson_df, course_hole_concat == hole & !grepl("_green$", polygon_name))
+  green_polygon <- filter(geojson_df, course_hole_concat == hole & grepl("_green$", polygon_name))$geometry
+  
+  # Calculate the centroid of the green polygon for the hole
+  green_centroid <- st_centroid(green_polygon)
+  
+  # Calculate distances for the hole's elements
+  distances <- st_distance(st_centroid(hole_elements$geometry), green_centroid)
+  
+  # Convert distances to yards and update the original dataset
+  geojson_df$distance_to_green_yards[geojson_df$course_hole_concat == hole & !grepl("_green$", geojson_df$polygon_name)] <- distances / 0.9144
+}
+
 
 
 # ui
@@ -154,6 +176,7 @@ server <- function(input, output, session) {
       plot_path = character(),
       bunker_count = numeric(),
       green_sq_ft = numeric(),
+      distance_to_green_yards = numeric(),
       stringsAsFactors = FALSE
     )
     
@@ -166,6 +189,7 @@ server <- function(input, output, session) {
       # count bunkers and calculate green size
       bunker_count <- sum(grepl("bunker", geojson_df_hole$course_element, ignore.case = TRUE))
       green_sq_ft <- prettyNum(round(sum(geojson_df_hole$total_sq_ft[grepl("green", geojson_df_hole$course_element, ignore.case = TRUE)])), big.mark = ",")
+      distance_to_green_yards <- round(max(geojson_df_hole$distance_to_green_yards, na.rm = TRUE))
       
       # plot the hole layout
       plot <- ggplot() +
@@ -194,6 +218,7 @@ server <- function(input, output, session) {
         plot_path = plot_path,
         bunker_count = bunker_count,
         green_sq_ft = green_sq_ft,
+        distance_to_green_yards = distance_to_green_yards,
         stringsAsFactors = FALSE
       ))
     }
@@ -214,7 +239,9 @@ server <- function(input, output, session) {
         " | ",
         "Bunkers: **", round(sum(as.numeric(gsub(",", "", gt_data$bunker_count)), na.rm = TRUE)), "**",
         " | ",
-        "Trace Date: **", unique(scorecard_subset$trace_date), "**"))
+        "Trace Date: **", unique(scorecard_subset$trace_date), "**",
+        "<br>",
+        "<i>Est. Distance: The straight-line yards from the furthest tee to the green for each hole.</i>"))
         ) %>%
       text_transform(
         locations = cells_body(columns = c(plot_path)),
@@ -229,11 +256,13 @@ server <- function(input, output, session) {
         hole_num = "Hole #",
         plot_path = "Hole Layout",
         bunker_count = "Bunkers",
-        green_sq_ft = "Est. Green Size (Sq Ft)"
+        green_sq_ft = "Est. Green Size (Sq Ft)",
+        distance_to_green_yards = "Est. Distance"
+        
       ) %>%
       tab_style(
         style = cell_text(align = "center"), 
-        locations = cells_body(columns = c(hole_num, plot_path, bunker_count, green_sq_ft))
+        locations = cells_body(columns = c(hole_num, plot_path, bunker_count, green_sq_ft, distance_to_green_yards))
       )
     gt_table
   })
