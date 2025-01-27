@@ -79,25 +79,27 @@ valid_courses <- unique(geojson_df$course_name_concat)
 valid_courses <- valid_courses[!is.na(valid_courses) & valid_courses != "" & valid_courses != "NA - NA, NA"]
 
 # initialize the distance column (straight line distance, aka "as the crow flies")
-geojson_df$distance_to_green_yards <- NA  
+geojson_df$distance_to_green_yards <- NA
 
 # loop through each course/hole combination
 for (hole in unique(geojson_df$course_hole_concat)) {
   
-  # Filter polygons for the hole's elements and green
+  # filter polygons for hole elements and green
   hole_elements <- filter(geojson_df, course_hole_concat == hole & !grepl("_green$", polygon_name))
   green_polygon <- filter(geojson_df, course_hole_concat == hole & grepl("_green$", polygon_name))$geometry
   
-  # Calculate the centroid of the green polygon for the hole
-  green_centroid <- st_centroid(green_polygon)
-  
-  # Calculate distances for the hole's elements
-  distances <- st_distance(st_centroid(hole_elements$geometry), green_centroid)
-  
-  # Convert distances to yards and update the original dataset
-  geojson_df$distance_to_green_yards[geojson_df$course_hole_concat == hole & !grepl("_green$", geojson_df$polygon_name)] <- distances / 0.9144
+  if (length(green_polygon) > 0) {
+    # calculate green centroid
+    green_centroid <- st_centroid(green_polygon)
+    
+    # calculate hole distances ('as the crow flies' straight line distance from furthest point to green)
+    distances <- st_distance(st_centroid(hole_elements$geometry), green_centroid)
+    
+    if (length(distances) > 0) {
+      geojson_df$distance_to_green_yards[geojson_df$course_hole_concat == hole & !grepl("_green$", geojson_df$polygon_name)] <- distances / 0.9144
+    }
+  }
 }
-
 
 
 # ui
