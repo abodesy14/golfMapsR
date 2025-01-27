@@ -20,10 +20,10 @@ kml_files <- list.files("data/kml", pattern = "\\kml$", full.names = TRUE, recur
 # local testing
 #kml_files <- list.files("/Users/adambeaudet/Github/golfMapsR/data/kml", pattern = "\\kml$", full.names = TRUE, recursive = TRUE)
 
-# read and combine files
+# read and combine files  
 # sometimes unwanted polygons from osm get included that aren't true specific hole elements that we want to exclude
 kml_df <- bind_rows(lapply(kml_files, st_read)) %>%
-  rename(polygon_name = Name) %>%
+  rename(polygon_name = Name)%>%
   filter(!(polygon_name %in% c("Practice green", "Practice Area", "Driving Range", "", "Putting Green")))
 
 geojson_df <- st_as_sf(kml_df, "POLYGON")
