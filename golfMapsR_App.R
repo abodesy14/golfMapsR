@@ -7,7 +7,7 @@
   library(shiny)
   library(shinyWidgets)
   library(shinybusy)
-  library(tidyverse)
+  library(shinythemes)
   library(gt)
   library(gtExtras)
   library(base64enc)
