@@ -16,7 +16,7 @@
 
 # list files in kml data folder
 # shinyapps.io
-  kml_files <- list.files("inst/extdata/kml", pattern = "\\kml$", full.names = TRUE, recursive = TRUE)
+kml_files <- list.files("data/kml", pattern = "\\kml$", full.names = TRUE, recursive = TRUE)
 # local testing
 #kml_files <- list.files("/Users/adambeaudet/Github/golfMapsR/data/kml", pattern = "\\kml$", full.names = TRUE, recursive = TRUE)
 
