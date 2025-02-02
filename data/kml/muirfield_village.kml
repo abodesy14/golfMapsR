@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-	<name>murfield_village</name>
+	<name>muirfield_village</name>
 	<gx:CascadingStyle kml:id="__managed_style_2624C14C4A3144F0E5DE">
 		<Style>
 			<IconStyle>
@@ -58,7 +58,7 @@
 		</Pair>
 	</StyleMap>
 	<Placemark id="07E2B104CE311194609F">
-		<name>murfield_village_hole_10_tee</name>
+		<name>muirfield_village_hole_10_tee</name>
 		<LookAt>
 			<longitude>-83.14144565160287</longitude>
 			<latitude>40.14124911346118</latitude>
@@ -81,7 +81,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="068E6DA156311194AF5E">
-		<name>murfield_village_hole_1_tee</name>
+		<name>muirfield_village_hole_1_tee</name>
 		<LookAt>
 			<longitude>-83.14105635189858</longitude>
 			<latitude>40.14148009652457</latitude>
@@ -104,7 +104,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E0D37D9C1311194E42E">
-		<name>murfield_village_hole_1_tee</name>
+		<name>muirfield_village_hole_1_tee</name>
 		<LookAt>
 			<longitude>-83.14079565576984</longitude>
 			<latitude>40.14156168168496</latitude>
@@ -127,7 +127,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="07A405B6BD311195180D">
-		<name>murfield_village_hole_1_tee</name>
+		<name>muirfield_village_hole_1_tee</name>
 		<LookAt>
 			<longitude>-83.14036886383906</longitude>
 			<latitude>40.14176133668077</latitude>
@@ -150,7 +150,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00CD9092903111954A04">
-		<name>murfield_village_hole_1_tee</name>
+		<name>muirfield_village_hole_1_tee</name>
 		<LookAt>
 			<longitude>-83.14001955079928</longitude>
 			<latitude>40.14205802421814</latitude>
@@ -173,7 +173,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0059F0DED4311196630F">
-		<name>murfield_village_hole_1_fairway</name>
+		<name>muirfield_village_hole_1_fairway</name>
 		<LookAt>
 			<longitude>-83.13876212628803</longitude>
 			<latitude>40.14265033955004</latitude>
@@ -196,7 +196,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0EA056D256311196DB21">
-		<name>murfield_village_hole_1_bunker</name>
+		<name>muirfield_village_hole_1_bunker</name>
 		<LookAt>
 			<longitude>-83.13861426826853</longitude>
 			<latitude>40.14231483245433</latitude>
@@ -219,7 +219,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0098BAE1A631119712BE">
-		<name>murfield_village_hole_1_bunker</name>
+		<name>muirfield_village_hole_1_bunker</name>
 		<LookAt>
 			<longitude>-83.13844920188319</longitude>
 			<latitude>40.14230010342258</latitude>
@@ -242,7 +242,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0FBF7FDC34311197A395">
-		<name>murfield_village_hole_1_bunker</name>
+		<name>muirfield_village_hole_1_bunker</name>
 		<LookAt>
 			<longitude>-83.13839299232791</longitude>
 			<latitude>40.14220514192897</latitude>
@@ -265,7 +265,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0CFCC9D408311197F58A">
-		<name>murfield_village_hole_1_bunker</name>
+		<name>muirfield_village_hole_1_bunker</name>
 		<LookAt>
 			<longitude>-83.1383230442883</longitude>
 			<latitude>40.14239086178901</latitude>
@@ -288,7 +288,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="05D890E5E63111984C05">
-		<name>murfield_village_hole_1_bunker</name>
+		<name>muirfield_village_hole_1_bunker</name>
 		<LookAt>
 			<longitude>-83.1371909081949</longitude>
 			<latitude>40.14247168157595</latitude>
@@ -311,7 +311,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="055FF657373111988D87">
-		<name>murfield_village_hole_1_bunker</name>
+		<name>muirfield_village_hole_1_bunker</name>
 		<LookAt>
 			<longitude>-83.1369068787011</longitude>
 			<latitude>40.14272859673819</latitude>
@@ -334,7 +334,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0A9F88B51A3111997F53">
-		<name>murfield_village_hole_1_green</name>
+		<name>muirfield_village_hole_1_green</name>
 		<LookAt>
 			<longitude>-83.13676756511757</longitude>
 			<latitude>40.14265290552921</latitude>
@@ -357,7 +357,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="06BC927A3831134C6AA8">
-		<name>murfield_village_hole_2_tee</name>
+		<name>muirfield_village_hole_2_tee</name>
 		<LookAt>
 			<longitude>-83.13623679456784</longitude>
 			<latitude>40.14208259683892</latitude>
@@ -380,7 +380,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0661DB60C831134CD97F">
-		<name>murfield_village_hole_2_tee</name>
+		<name>muirfield_village_hole_2_tee</name>
 		<LookAt>
 			<longitude>-83.13572668819295</longitude>
 			<latitude>40.14223554706702</latitude>
@@ -403,7 +403,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E208EBDB931134D1575">
-		<name>murfield_village_hole_2_tee</name>
+		<name>muirfield_village_hole_2_tee</name>
 		<LookAt>
 			<longitude>-83.13572668819295</longitude>
 			<latitude>40.14223554706702</latitude>
@@ -426,7 +426,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0BDA7D8A5231134D52A9">
-		<name>murfield_village_hole_2_tee</name>
+		<name>muirfield_village_hole_2_tee</name>
 		<LookAt>
 			<longitude>-83.13538669357996</longitude>
 			<latitude>40.142467116356</latitude>
@@ -449,7 +449,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E6A24865031134D964C">
-		<name>murfield_village_hole_2_tee</name>
+		<name>muirfield_village_hole_2_tee</name>
 		<LookAt>
 			<longitude>-83.13521590948967</longitude>
 			<latitude>40.14282664995253</latitude>
@@ -472,7 +472,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="061CB0461F31134ED580">
-		<name>murfield_village_hole_2_bunker</name>
+		<name>muirfield_village_hole_2_bunker</name>
 		<LookAt>
 			<longitude>-83.1333658537034</longitude>
 			<latitude>40.14510321204238</latitude>
@@ -495,7 +495,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="084B0811C131134F253A">
-		<name>murfield_village_hole_2_bunker</name>
+		<name>muirfield_village_hole_2_bunker</name>
 		<LookAt>
 			<longitude>-83.13336172898951</longitude>
 			<latitude>40.14484311913117</latitude>
@@ -518,7 +518,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01044EE1B33113528AD5">
-		<name>murfield_village_hole_2_water</name>
+		<name>muirfield_village_hole_2_water</name>
 		<LookAt>
 			<longitude>-83.13510671183494</longitude>
 			<latitude>40.14324848409982</latitude>
@@ -541,7 +541,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="029A02C74B31135324BE">
-		<name>murfield_village_hole_2_green</name>
+		<name>muirfield_village_hole_2_green</name>
 		<LookAt>
 			<longitude>-83.13325482337198</longitude>
 			<latitude>40.14492709073012</latitude>
@@ -564,7 +564,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0975528C43311354A649">
-		<name>murfield_village_hole_2_fairway</name>
+		<name>muirfield_village_hole_2_fairway</name>
 		<LookAt>
 			<longitude>-83.13331673732549</longitude>
 			<latitude>40.14472343077479</latitude>
@@ -587,7 +587,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="083786E04A311BC6D1B7">
-		<name>murfield_village_hole_3_tee</name>
+		<name>muirfield_village_hole_3_tee</name>
 		<LookAt>
 			<longitude>-83.13243132955169</longitude>
 			<latitude>40.14517426182286</latitude>
@@ -610,7 +610,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="05FA92EECC311BC72411">
-		<name>murfield_village_hole_3_tee</name>
+		<name>muirfield_village_hole_3_tee</name>
 		<LookAt>
 			<longitude>-83.13229840580971</longitude>
 			<latitude>40.14509902508107</latitude>
@@ -633,7 +633,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0290048196311BC750C5">
-		<name>murfield_village_hole_3_tee</name>
+		<name>muirfield_village_hole_3_tee</name>
 		<LookAt>
 			<longitude>-83.13208683063839</longitude>
 			<latitude>40.14488099405807</latitude>
@@ -656,7 +656,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03DD290010311BC783FC">
-		<name>murfield_village_hole_3_tee</name>
+		<name>muirfield_village_hole_3_tee</name>
 		<LookAt>
 			<longitude>-83.13178152021931</longitude>
 			<latitude>40.14433121384615</latitude>
@@ -679,7 +679,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="056B0B9FF4311BC9E8A9">
-		<name>murfield_village_hole_3_water</name>
+		<name>muirfield_village_hole_3_water</name>
 		<LookAt>
 			<longitude>-83.13214520518424</longitude>
 			<latitude>40.14453006502244</latitude>
@@ -702,7 +702,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01F5DFB1EB311BCA9681">
-		<name>murfield_village_hole_3_fairway</name>
+		<name>muirfield_village_hole_3_fairway</name>
 		<LookAt>
 			<longitude>-83.13102783129823</longitude>
 			<latitude>40.14353502271054</latitude>
@@ -725,7 +725,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E6D21C5C5311BCAF9F8">
-		<name>murfield_village_hole_3_green</name>
+		<name>muirfield_village_hole_3_green</name>
 		<LookAt>
 			<longitude>-83.12953389539959</longitude>
 			<latitude>40.14315428615458</latitude>
@@ -748,7 +748,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0F81673F7A311BCB49E0">
-		<name>murfield_village_hole_3_bunker</name>
+		<name>muirfield_village_hole_3_bunker</name>
 		<LookAt>
 			<longitude>-83.12935756344319</longitude>
 			<latitude>40.1432438278492</latitude>
@@ -771,7 +771,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="034E2B2242311BCB9927">
-		<name>murfield_village_hole_3_bunker</name>
+		<name>muirfield_village_hole_3_bunker</name>
 		<LookAt>
 			<longitude>-83.1295165097348</longitude>
 			<latitude>40.14340213124362</latitude>
@@ -794,7 +794,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0BA76E20E5311BCC7DBD">
-		<name>murfield_village_hole_3_fairway</name>
+		<name>muirfield_village_hole_3_fairway</name>
 		<LookAt>
 			<longitude>-83.12973640967274</longitude>
 			<latitude>40.14347767301925</latitude>
@@ -817,7 +817,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="063460F14E311BCD3162">
-		<name>murfield_village_hole_4_tee</name>
+		<name>muirfield_village_hole_4_tee</name>
 		<LookAt>
 			<longitude>-83.12970899351411</longitude>
 			<latitude>40.14374165799171</latitude>
@@ -840,7 +840,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="05DC221E16311BCD854C">
-		<name>murfield_village_hole_4_tee</name>
+		<name>muirfield_village_hole_4_tee</name>
 		<LookAt>
 			<longitude>-83.12996366613461</longitude>
 			<latitude>40.14385035090077</latitude>
@@ -863,7 +863,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00E8BC3FFE311BCDC345">
-		<name>murfield_village_hole_4_tee</name>
+		<name>muirfield_village_hole_4_tee</name>
 		<LookAt>
 			<longitude>-83.13023132672056</longitude>
 			<latitude>40.14410042898942</latitude>
@@ -886,7 +886,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0124285624311BCE05E1">
-		<name>murfield_village_hole_4_bunker</name>
+		<name>muirfield_village_hole_4_bunker</name>
 		<LookAt>
 			<longitude>-83.13101677492142</longitude>
 			<latitude>40.14470865243786</latitude>
@@ -909,7 +909,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="069E834698311BCE5267">
-		<name>murfield_village_hole_4_bunker</name>
+		<name>muirfield_village_hole_4_bunker</name>
 		<LookAt>
 			<longitude>-83.13137778091253</longitude>
 			<latitude>40.14480674691477</latitude>
@@ -932,7 +932,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0C2EA1AFA4311BCE91EF">
-		<name>murfield_village_hole_4_bunker</name>
+		<name>muirfield_village_hole_4_bunker</name>
 		<LookAt>
 			<longitude>-83.13116260329804</longitude>
 			<latitude>40.14495049696657</latitude>
@@ -955,7 +955,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E871D7C43311BCEC56C">
-		<name>murfield_village_hole_4_bunker</name>
+		<name>muirfield_village_hole_4_bunker</name>
 		<LookAt>
 			<longitude>-83.13126593019507</longitude>
 			<latitude>40.14503260573191</latitude>
@@ -978,7 +978,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0BC0CD39B2311BCFB245">
-		<name>murfield_village_hole_4_green</name>
+		<name>muirfield_village_hole_4_green</name>
 		<LookAt>
 			<longitude>-83.13138587214006</longitude>
 			<latitude>40.14493111090885</latitude>
@@ -1001,7 +1001,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00A9070EDC311BD04513">
-		<name>murfield_village_hole_4_fairway</name>
+		<name>muirfield_village_hole_4_fairway</name>
 		<LookAt>
 			<longitude>-83.13098759515618</longitude>
 			<latitude>40.14472547407023</latitude>
@@ -1024,7 +1024,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0D0B727C71311BD1387E">
-		<name>murfield_village_hole_5_tee</name>
+		<name>muirfield_village_hole_5_tee</name>
 		<LookAt>
 			<longitude>-83.13166739360247</longitude>
 			<latitude>40.14515755475628</latitude>
@@ -1047,7 +1047,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0B63AB89D2311BD17EF8">
-		<name>murfield_village_hole_5_tee</name>
+		<name>muirfield_village_hole_5_tee</name>
 		<LookAt>
 			<longitude>-83.13189021288433</longitude>
 			<latitude>40.14542769441796</latitude>
@@ -1070,7 +1070,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="045F2980D4311BD1AD89">
-		<name>murfield_village_hole_5_tee</name>
+		<name>muirfield_village_hole_5_tee</name>
 		<LookAt>
 			<longitude>-83.13212510008188</longitude>
 			<latitude>40.1454843928066</latitude>
@@ -1093,7 +1093,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0B62A40211311BD1D695">
-		<name>murfield_village_hole_5_tee</name>
+		<name>muirfield_village_hole_5_tee</name>
 		<LookAt>
 			<longitude>-83.13237156922222</longitude>
 			<latitude>40.14566747341215</latitude>
@@ -1116,7 +1116,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03B12DF4C0311BD20387">
-		<name>murfield_village_hole_5_tee</name>
+		<name>muirfield_village_hole_5_tee</name>
 		<LookAt>
 			<longitude>-83.13269272451893</longitude>
 			<latitude>40.14601293661669</latitude>
@@ -1139,7 +1139,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03B553F9C6311BD589B4">
-		<name>murfield_village_hole_5_water</name>
+		<name>muirfield_village_hole_5_water</name>
 		<LookAt>
 			<longitude>-83.13387138142387</longitude>
 			<latitude>40.14742562293801</latitude>
@@ -1162,7 +1162,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0CE1270150311BD60673">
-		<name>murfield_village_hole_5_fairway</name>
+		<name>muirfield_village_hole_5_fairway</name>
 		<LookAt>
 			<longitude>-83.13363388143654</longitude>
 			<latitude>40.14811521821301</latitude>
@@ -1185,7 +1185,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="066E410384311BD6F7B5">
-		<name>murfield_village_hole_5_fairway</name>
+		<name>muirfield_village_hole_5_fairway</name>
 		<LookAt>
 			<longitude>-83.13325912578958</longitude>
 			<latitude>40.14798785265516</latitude>
@@ -1208,7 +1208,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0CAD5E4E26311BD771C4">
-		<name>murfield_village_hole_5_green</name>
+		<name>muirfield_village_hole_5_green</name>
 		<LookAt>
 			<longitude>-83.13307792401882</longitude>
 			<latitude>40.14904012745744</latitude>
@@ -1231,7 +1231,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0F1384B79C311BD7A814">
-		<name>murfield_village_hole_5_bunker</name>
+		<name>muirfield_village_hole_5_bunker</name>
 		<LookAt>
 			<longitude>-83.13302963677371</longitude>
 			<latitude>40.14906141335356</latitude>
@@ -1254,7 +1254,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0844F52163311BD7E442">
-		<name>murfield_village_hole_5_bunker</name>
+		<name>muirfield_village_hole_5_bunker</name>
 		<LookAt>
 			<longitude>-83.13302956542954</longitude>
 			<latitude>40.14906143415039</latitude>
@@ -1277,7 +1277,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="02FF61344C311BD826F8">
-		<name>murfield_village_hole_5_bunker</name>
+		<name>muirfield_village_hole_5_bunker</name>
 		<LookAt>
 			<longitude>-83.13274128697404</longitude>
 			<latitude>40.14891473902546</latitude>
@@ -1300,7 +1300,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="026352398C311BD87900">
-		<name>murfield_village_hole_5_bunker</name>
+		<name>muirfield_village_hole_5_bunker</name>
 		<LookAt>
 			<longitude>-83.13307961176294</longitude>
 			<latitude>40.14887415846147</latitude>
@@ -1323,7 +1323,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="04894EE350311BD8B68F">
-		<name>murfield_village_hole_5_bunker</name>
+		<name>muirfield_village_hole_5_bunker</name>
 		<LookAt>
 			<longitude>-83.13276498768886</longitude>
 			<latitude>40.14859145973373</latitude>
@@ -1346,7 +1346,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00D36E7FE1311BD9AE02">
-		<name>murfield_village_hole_6_tee</name>
+		<name>muirfield_village_hole_6_tee</name>
 		<LookAt>
 			<longitude>-83.13135709791624</longitude>
 			<latitude>40.14915045210505</latitude>
@@ -1369,7 +1369,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0D878958D5311BD9E7E9">
-		<name>murfield_village_hole_6_tee</name>
+		<name>muirfield_village_hole_6_tee</name>
 		<LookAt>
 			<longitude>-83.1319565553504</longitude>
 			<latitude>40.14933960122517</latitude>
@@ -1392,7 +1392,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0B3B6A6DFC311BDA14C4">
-		<name>murfield_village_hole_6_tee</name>
+		<name>muirfield_village_hole_6_tee</name>
 		<LookAt>
 			<longitude>-83.13218954980945</longitude>
 			<latitude>40.14944408147613</latitude>
@@ -1415,7 +1415,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="018B9CEF17311BDA4893">
-		<name>murfield_village_hole_6_tee</name>
+		<name>muirfield_village_hole_6_tee</name>
 		<LookAt>
 			<longitude>-83.13238235159157</longitude>
 			<latitude>40.1494687613423</latitude>
@@ -1438,7 +1438,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0DFCC96545311BDA70F4">
-		<name>murfield_village_hole_6_tee</name>
+		<name>muirfield_village_hole_6_tee</name>
 		<LookAt>
 			<longitude>-83.1325862510818</longitude>
 			<latitude>40.14957383527521</latitude>
@@ -1461,7 +1461,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0517631AF8311BDB1A6C">
-		<name>murfield_village_hole_6_water</name>
+		<name>muirfield_village_hole_6_water</name>
 		<LookAt>
 			<longitude>-83.13328932341801</longitude>
 			<latitude>40.14949507156864</latitude>
@@ -1484,7 +1484,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="076AD9B929311BDBE8B9">
-		<name>murfield_village_hole_6_bunker</name>
+		<name>muirfield_village_hole_6_bunker</name>
 		<LookAt>
 			<longitude>-83.13558707368902</longitude>
 			<latitude>40.15044148531823</latitude>
@@ -1507,7 +1507,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0208B06377311BDC4EA3">
-		<name>murfield_village_hole_6_bunker</name>
+		<name>muirfield_village_hole_6_bunker</name>
 		<LookAt>
 			<longitude>-83.13445139827442</longitude>
 			<latitude>40.15010240194783</latitude>
@@ -1530,7 +1530,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0847F3D7D1311BDCB7F6">
-		<name>murfield_village_hole_6_bunker</name>
+		<name>muirfield_village_hole_6_bunker</name>
 		<LookAt>
 			<longitude>-83.13433293419088</longitude>
 			<latitude>40.14980730080357</latitude>
@@ -1553,7 +1553,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="07097828F3311BDD2EE8">
-		<name>murfield_village_hole_6_fairway</name>
+		<name>muirfield_village_hole_6_fairway</name>
 		<LookAt>
 			<longitude>-83.13549075374519</longitude>
 			<latitude>40.15056383529421</latitude>
@@ -1576,7 +1576,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="046B155961311BDD959D">
-		<name>murfield_village_hole_6_green</name>
+		<name>muirfield_village_hole_6_green</name>
 		<LookAt>
 			<longitude>-83.13586425195969</longitude>
 			<latitude>40.15052736192642</latitude>
@@ -1599,7 +1599,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01280B83F7311BDE54C3">
-		<name>murfield_village_hole_6_fairway</name>
+		<name>muirfield_village_hole_6_fairway</name>
 		<LookAt>
 			<longitude>-83.13473098616396</longitude>
 			<latitude>40.15024173761661</latitude>
@@ -1622,7 +1622,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0ED53B4A2E311BDF6884">
-		<name>murfield_village_hole_6_water</name>
+		<name>muirfield_village_hole_6_water</name>
 		<LookAt>
 			<longitude>-83.13521172346277</longitude>
 			<latitude>40.15066823288929</latitude>
@@ -1645,7 +1645,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0A3443C1CC311BDFEC0C">
-		<name>murfield_village_hole_7_water</name>
+		<name>muirfield_village_hole_7_water</name>
 		<LookAt>
 			<longitude>-83.13681692709199</longitude>
 			<latitude>40.15035876912974</latitude>
@@ -1668,7 +1668,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03C69DE022311BE51871">
-		<name>murfield_village_hole_7_tee</name>
+		<name>muirfield_village_hole_7_tee</name>
 		<LookAt>
 			<longitude>-83.13619026569621</longitude>
 			<latitude>40.15128925741936</latitude>
@@ -1691,7 +1691,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00C5D39CB0311BE55059">
-		<name>murfield_village_hole_7_water</name>
+		<name>muirfield_village_hole_7_water</name>
 		<LookAt>
 			<longitude>-83.13643837020277</longitude>
 			<latitude>40.15119309511422</latitude>
@@ -1714,7 +1714,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="08FA892591311BE58B27">
-		<name>murfield_village_hole_7_tee</name>
+		<name>muirfield_village_hole_7_tee</name>
 		<LookAt>
 			<longitude>-83.13664314100355</longitude>
 			<latitude>40.15097771913424</latitude>
@@ -1737,7 +1737,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0CCF6BE3E0311BE5C9B5">
-		<name>murfield_village_hole_7_tee</name>
+		<name>muirfield_village_hole_7_tee</name>
 		<LookAt>
 			<longitude>-83.13676373740745</longitude>
 			<latitude>40.15078743119949</latitude>
@@ -1760,7 +1760,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0C21A94193311BE65AEB">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13770676062219</longitude>
 			<latitude>40.14949491426388</latitude>
@@ -1783,7 +1783,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="04EF11FFF2311BE6AFD2">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13811020629466</longitude>
 			<latitude>40.14964341254243</latitude>
@@ -1806,7 +1806,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="055B979F86311BE6F4AC">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13807248193716</longitude>
 			<latitude>40.14930342625304</latitude>
@@ -1829,7 +1829,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0014C0897D311BE7311F">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13815002551188</longitude>
 			<latitude>40.14919838028593</latitude>
@@ -1852,7 +1852,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="009E0CF465311BE786B6">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13774850320574</longitude>
 			<latitude>40.14911259972077</latitude>
@@ -1875,7 +1875,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0112953D4D311BE7C5D9">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13791200658716</longitude>
 			<latitude>40.1480519895015</latitude>
@@ -1898,7 +1898,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="045B285F9C311BE82FC2">
-		<name>murfield_village_hole_7_fairway</name>
+		<name>muirfield_village_hole_7_fairway</name>
 		<LookAt>
 			<longitude>-83.13859044732045</longitude>
 			<latitude>40.14725339708644</latitude>
@@ -1921,7 +1921,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0A9AF71B8E311BE8671E">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13859046293454</longitude>
 			<latitude>40.14725332270071</latitude>
@@ -1944,7 +1944,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0499A97E91311BE89A12">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13859048725223</longitude>
 			<latitude>40.14725332944191</latitude>
@@ -1967,7 +1967,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0C132164E6311BE8D8A7">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.13844439897601</longitude>
 			<latitude>40.14743351200676</latitude>
@@ -1990,7 +1990,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0F495208DD311BE914CE">
-		<name>murfield_village_hole_7_bunker</name>
+		<name>muirfield_village_hole_7_bunker</name>
 		<LookAt>
 			<longitude>-83.1383618868585</longitude>
 			<latitude>40.14710739122678</latitude>
@@ -2013,7 +2013,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="08994D2CB2311BEA0F7E">
-		<name>murfield_village_hole_7_green</name>
+		<name>muirfield_village_hole_7_green</name>
 		<LookAt>
 			<longitude>-83.13844701791909</longitude>
 			<latitude>40.14709151608625</latitude>
@@ -2036,7 +2036,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="027CA0C7A2311BEA7A40">
-		<name>murfield_village_hole_7_fairway</name>
+		<name>muirfield_village_hole_7_fairway</name>
 		<LookAt>
 			<longitude>-83.13855061836446</longitude>
 			<latitude>40.14692490228787</latitude>
@@ -2059,7 +2059,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="012FE3F287311BEB704B">
-		<name>murfield_village_hole_7_tee</name>
+		<name>muirfield_village_hole_7_tee</name>
 		<LookAt>
 			<longitude>-83.13787845009932</longitude>
 			<latitude>40.14802661283239</latitude>
@@ -2082,7 +2082,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0ACB7E2625311BEBECFD">
-		<name>murfield_village_hole_8_tee</name>
+		<name>muirfield_village_hole_8_tee</name>
 		<LookAt>
 			<longitude>-83.13908963647636</longitude>
 			<latitude>40.14664782415872</latitude>
@@ -2105,7 +2105,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="05E6754EF1311BEC2D21">
-		<name>murfield_village_hole_8_tee</name>
+		<name>muirfield_village_hole_8_tee</name>
 		<LookAt>
 			<longitude>-83.13914820820918</longitude>
 			<latitude>40.14648916676264</latitude>
@@ -2128,7 +2128,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0F75607ABA311BEC5AD7">
-		<name>murfield_village_hole_8_tee</name>
+		<name>muirfield_village_hole_8_tee</name>
 		<LookAt>
 			<longitude>-83.13917027088992</longitude>
 			<latitude>40.14621611140866</latitude>
@@ -2151,7 +2151,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0884DF2BA3311BEC86F5">
-		<name>murfield_village_hole_8_tee</name>
+		<name>muirfield_village_hole_8_tee</name>
 		<LookAt>
 			<longitude>-83.13919044609698</longitude>
 			<latitude>40.14610071505759</latitude>
@@ -2174,7 +2174,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00C209BDBD311BECAF68">
-		<name>murfield_village_hole_8_tee</name>
+		<name>muirfield_village_hole_8_tee</name>
 		<LookAt>
 			<longitude>-83.13922022810333</longitude>
 			<latitude>40.14596726351967</latitude>
@@ -2197,7 +2197,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03D8B91281311BED35D4">
-		<name>murfield_village_hole_8_bunker</name>
+		<name>muirfield_village_hole_8_bunker</name>
 		<LookAt>
 			<longitude>-83.13932964940005</longitude>
 			<latitude>40.14519297584601</latitude>
@@ -2220,7 +2220,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="09A956F09D311BEE07BD">
-		<name>murfield_village_hole_8_bunker</name>
+		<name>muirfield_village_hole_8_bunker</name>
 		<LookAt>
 			<longitude>-83.13952332747442</longitude>
 			<latitude>40.14514997259092</latitude>
@@ -2243,7 +2243,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="07AA898D1D311BEE3E55">
-		<name>murfield_village_hole_8_bunker</name>
+		<name>muirfield_village_hole_8_bunker</name>
 		<LookAt>
 			<longitude>-83.1393186620636</longitude>
 			<latitude>40.14495387210206</latitude>
@@ -2266,7 +2266,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0BEA527C82311BEE9054">
-		<name>murfield_village_hole_8_green</name>
+		<name>muirfield_village_hole_8_green</name>
 		<LookAt>
 			<longitude>-83.13935912066468</longitude>
 			<latitude>40.14503965550522</latitude>
@@ -2289,7 +2289,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0CF1568EC2311BEF7911">
-		<name>murfield_village_hole_9_water</name>
+		<name>muirfield_village_hole_9_water</name>
 		<LookAt>
 			<longitude>-83.1365105763572</longitude>
 			<latitude>40.14550316469142</latitude>
@@ -2312,7 +2312,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0FDB0F40D0311BEFBCFB">
-		<name>murfield_village_hole_9_tee</name>
+		<name>muirfield_village_hole_9_tee</name>
 		<LookAt>
 			<longitude>-83.13890014902826</longitude>
 			<latitude>40.1449005901173</latitude>
@@ -2335,7 +2335,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="04EC113452311BF0AB26">
-		<name>murfield_village_hole_9_green</name>
+		<name>muirfield_village_hole_9_green</name>
 		<LookAt>
 			<longitude>-83.141038705665</longitude>
 			<latitude>40.14199815982892</latitude>
@@ -2358,7 +2358,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0B730C5877311BF15583">
-		<name>murfield_village_hole_9_water</name>
+		<name>muirfield_village_hole_9_water</name>
 		<LookAt>
 			<longitude>-83.14070226442617</longitude>
 			<latitude>40.14224329927919</latitude>
@@ -2381,7 +2381,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0D97B7742A311BF1B754">
-		<name>murfield_village_hole_9_bunker</name>
+		<name>muirfield_village_hole_9_bunker</name>
 		<LookAt>
 			<longitude>-83.14063999062921</longitude>
 			<latitude>40.1421372016701</latitude>
@@ -2404,7 +2404,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E4705F777311BF1F357">
-		<name>murfield_village_hole_9_bunker</name>
+		<name>muirfield_village_hole_9_bunker</name>
 		<LookAt>
 			<longitude>-83.14108886367879</longitude>
 			<latitude>40.14188919111229</latitude>
@@ -2427,7 +2427,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0782ADBC94311BF2958B">
-		<name>murfield_village_hole_9_fairway</name>
+		<name>muirfield_village_hole_9_fairway</name>
 		<LookAt>
 			<longitude>-83.14015006142118</longitude>
 			<latitude>40.14270655028541</latitude>
@@ -2450,7 +2450,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0D9A1F5251311BF2E403">
-		<name>murfield_village_hole_9_tee</name>
+		<name>muirfield_village_hole_9_tee</name>
 		<LookAt>
 			<longitude>-83.13935684186033</longitude>
 			<latitude>40.14460811915286</latitude>
@@ -2473,7 +2473,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00F4B51657311BF31306">
-		<name>murfield_village_hole_9_tee</name>
+		<name>muirfield_village_hole_9_tee</name>
 		<LookAt>
 			<longitude>-83.13939940042908</longitude>
 			<latitude>40.14418780126185</latitude>
@@ -2496,7 +2496,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="02B704F9523120BE6075">
-		<name>murfield_village_hole_10_tee</name>
+		<name>muirfield_village_hole_10_tee</name>
 		<LookAt>
 			<longitude>-83.14170437225235</longitude>
 			<latitude>40.14159925212054</latitude>
@@ -2519,7 +2519,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0775EC029F3120BEA1E0">
-		<name>murfield_village_hole_10_tee</name>
+		<name>muirfield_village_hole_10_tee</name>
 		<LookAt>
 			<longitude>-83.14218308717561</longitude>
 			<latitude>40.141665232775</latitude>
@@ -2542,7 +2542,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0CC21D923E3120BFC290">
-		<name>murfield_village_hole_10_water</name>
+		<name>muirfield_village_hole_10_water</name>
 		<LookAt>
 			<longitude>-83.14286684988602</longitude>
 			<latitude>40.14162571188606</latitude>
@@ -2565,7 +2565,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0EDAB32B943120C04BF6">
-		<name>murfield_village_hole_10_bunker</name>
+		<name>muirfield_village_hole_10_bunker</name>
 		<LookAt>
 			<longitude>-83.14295209692531</longitude>
 			<latitude>40.14272902063321</latitude>
@@ -2588,7 +2588,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00FED819CA3120C0C179">
-		<name>murfield_village_hole_10_bunker</name>
+		<name>muirfield_village_hole_10_bunker</name>
 		<LookAt>
 			<longitude>-83.14358776891294</longitude>
 			<latitude>40.14289748078543</latitude>
@@ -2611,7 +2611,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="02ABFE7EC73120C104B9">
-		<name>murfield_village_hole_10_bunker</name>
+		<name>muirfield_village_hole_10_bunker</name>
 		<LookAt>
 			<longitude>-83.14491485887132</longitude>
 			<latitude>40.14374718579954</latitude>
@@ -2634,7 +2634,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0D79C909E43120C156CF">
-		<name>murfield_village_hole_10_bunker</name>
+		<name>muirfield_village_hole_10_bunker</name>
 		<LookAt>
 			<longitude>-83.14485892198685</longitude>
 			<latitude>40.1437468563281</latitude>
@@ -2657,7 +2657,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01DDE9DD6B3120C18954">
-		<name>murfield_village_hole_10_bunker</name>
+		<name>muirfield_village_hole_10_bunker</name>
 		<LookAt>
 			<longitude>-83.14496799990918</longitude>
 			<latitude>40.14377414083921</latitude>
@@ -2680,7 +2680,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01758317F63120C1E93A">
-		<name>murfield_village_hole_10_green</name>
+		<name>muirfield_village_hole_10_green</name>
 		<LookAt>
 			<longitude>-83.14492165677177</longitude>
 			<latitude>40.14375992666485</latitude>
@@ -2703,7 +2703,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="07EE1515F93120C34AA5">
-		<name>murfield_village_hole_10_fairway</name>
+		<name>muirfield_village_hole_10_fairway</name>
 		<LookAt>
 			<longitude>-83.14490657689952</longitude>
 			<latitude>40.14387990996853</latitude>
@@ -2726,7 +2726,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0C38F51A733120C3D842">
-		<name>murfield_village_hole_11_tee</name>
+		<name>muirfield_village_hole_11_tee</name>
 		<LookAt>
 			<longitude>-83.14527089334265</longitude>
 			<latitude>40.1434752983938</latitude>
@@ -2749,7 +2749,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0CD638321F3120C41492">
-		<name>murfield_village_hole_11_tee</name>
+		<name>muirfield_village_hole_11_tee</name>
 		<LookAt>
 			<longitude>-83.14572761690481</longitude>
 			<latitude>40.14377427007294</latitude>
@@ -2772,7 +2772,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00CF56CC523120C440C9">
-		<name>murfield_village_hole_11_tee</name>
+		<name>muirfield_village_hole_11_tee</name>
 		<LookAt>
 			<longitude>-83.14593811809679</longitude>
 			<latitude>40.14397686755947</latitude>
@@ -2795,7 +2795,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01F8037E013120C47F55">
-		<name>murfield_village_hole_11_tee</name>
+		<name>muirfield_village_hole_11_tee</name>
 		<LookAt>
 			<longitude>-83.14626146741863</longitude>
 			<latitude>40.14409134095057</latitude>
@@ -2818,7 +2818,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0178999F8C3120C4AD44">
-		<name>murfield_village_hole_11_tee</name>
+		<name>muirfield_village_hole_11_tee</name>
 		<LookAt>
 			<longitude>-83.14648301533578</longitude>
 			<latitude>40.14413197818017</latitude>
@@ -2841,7 +2841,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="044AF3F1EC3120C9AF6C">
-		<name>murfield_village_hole_11_water</name>
+		<name>muirfield_village_hole_11_water</name>
 		<LookAt>
 			<longitude>-83.1473188371881</longitude>
 			<latitude>40.14410272316994</latitude>
@@ -2864,7 +2864,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0B3ED6E5A93120CA5C55">
-		<name>murfield_village_hole_11_fairway</name>
+		<name>muirfield_village_hole_11_fairway</name>
 		<LookAt>
 			<longitude>-83.14754989908468</longitude>
 			<latitude>40.14440200614738</latitude>
@@ -2887,7 +2887,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0B97EDBF413120CAA7AE">
-		<name>murfield_village_hole_11_bunker</name>
+		<name>muirfield_village_hole_11_bunker</name>
 		<LookAt>
 			<longitude>-83.14796817558657</longitude>
 			<latitude>40.14479209837933</latitude>
@@ -2910,7 +2910,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0031C914A73120CAE12A">
-		<name>murfield_village_hole_11_bunker</name>
+		<name>muirfield_village_hole_11_bunker</name>
 		<LookAt>
 			<longitude>-83.14800836725594</longitude>
 			<latitude>40.14479525948602</latitude>
@@ -2933,7 +2933,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="08A788362D3120CBCD9A">
-		<name>murfield_village_hole_11_fairway</name>
+		<name>muirfield_village_hole_11_fairway</name>
 		<LookAt>
 			<longitude>-83.14950590221996</longitude>
 			<latitude>40.14454062370817</latitude>
@@ -2956,7 +2956,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0D887BFDE23120CC701A">
-		<name>murfield_village_hole_11_green</name>
+		<name>muirfield_village_hole_11_green</name>
 		<LookAt>
 			<longitude>-83.15115013334049</longitude>
 			<latitude>40.14474707228239</latitude>
@@ -2979,7 +2979,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="058C44A6A13120CCC62C">
-		<name>murfield_village_hole_11_bunker</name>
+		<name>muirfield_village_hole_11_bunker</name>
 		<LookAt>
 			<longitude>-83.15115013334049</longitude>
 			<latitude>40.14474707228239</latitude>
@@ -3002,7 +3002,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0EB0184FE03120CD3721">
-		<name>murfield_village_hole_11_fairway</name>
+		<name>muirfield_village_hole_11_fairway</name>
 		<LookAt>
 			<longitude>-83.1508704839159</longitude>
 			<latitude>40.1448738684</latitude>
@@ -3025,7 +3025,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0258481E393120CDEB6F">
-		<name>murfield_village_hole_12_tee</name>
+		<name>muirfield_village_hole_12_tee</name>
 		<LookAt>
 			<longitude>-83.15096435442678</longitude>
 			<latitude>40.14423122852121</latitude>
@@ -3048,7 +3048,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0F4A6A8AAA3120CE3771">
-		<name>murfield_village_hole_12_tee</name>
+		<name>muirfield_village_hole_12_tee</name>
 		<LookAt>
 			<longitude>-83.15112287080115</longitude>
 			<latitude>40.14419107277758</latitude>
@@ -3071,7 +3071,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0AB2A6AF243120CE9717">
-		<name>murfield_village_hole_12_tee</name>
+		<name>muirfield_village_hole_12_tee</name>
 		<LookAt>
 			<longitude>-83.15135426442752</longitude>
 			<latitude>40.14428273941406</latitude>
@@ -3094,7 +3094,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="06ADE9A5073120CF4561">
-		<name>murfield_village_hole_12_water</name>
+		<name>muirfield_village_hole_12_water</name>
 		<LookAt>
 			<longitude>-83.15252981375173</longitude>
 			<latitude>40.14469573711451</latitude>
@@ -3117,7 +3117,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03E502F9D33120CF7CC7">
-		<name>murfield_village_hole_12_bunker</name>
+		<name>muirfield_village_hole_12_bunker</name>
 		<LookAt>
 			<longitude>-83.15251156866137</longitude>
 			<latitude>40.14473825159094</latitude>
@@ -3140,7 +3140,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01E3B2102E3120CFC500">
-		<name>murfield_village_hole_12_bunker</name>
+		<name>muirfield_village_hole_12_bunker</name>
 		<LookAt>
 			<longitude>-83.15251156866137</longitude>
 			<latitude>40.14473825159094</latitude>
@@ -3163,7 +3163,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0DB60E19E03120D09344">
-		<name>murfield_village_hole_12_green</name>
+		<name>muirfield_village_hole_12_green</name>
 		<LookAt>
 			<longitude>-83.15251174627262</longitude>
 			<latitude>40.14467787221496</latitude>
@@ -3186,7 +3186,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="07B1A1E0983120D0F275">
-		<name>murfield_village_hole_13_tee</name>
+		<name>muirfield_village_hole_13_tee</name>
 		<LookAt>
 			<longitude>-83.15388304647774</longitude>
 			<latitude>40.14430612107517</latitude>
@@ -3209,7 +3209,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="05CC32FE433120D1387E">
-		<name>murfield_village_hole_13_tee</name>
+		<name>muirfield_village_hole_13_tee</name>
 		<LookAt>
 			<longitude>-83.15346440554788</longitude>
 			<latitude>40.14422527821313</latitude>
@@ -3232,7 +3232,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0EFDA1272A3120D16F5D">
-		<name>murfield_village_hole_13_tee</name>
+		<name>muirfield_village_hole_13_tee</name>
 		<LookAt>
 			<longitude>-83.15297785769698</longitude>
 			<latitude>40.14417917308024</latitude>
@@ -3255,7 +3255,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0D53290DA83120D19DA4">
-		<name>murfield_village_hole_13_tee</name>
+		<name>muirfield_village_hole_13_tee</name>
 		<LookAt>
 			<longitude>-83.15261865153417</longitude>
 			<latitude>40.14406646753363</latitude>
@@ -3278,7 +3278,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01C59517CF3120D25AB0">
-		<name>murfield_village_hole_13_fairway</name>
+		<name>muirfield_village_hole_13_fairway</name>
 		<LookAt>
 			<longitude>-83.1506540215175</longitude>
 			<latitude>40.14420769285214</latitude>
@@ -3301,7 +3301,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="068999AAF43120D2A90D">
-		<name>murfield_village_hole_13_bunker</name>
+		<name>muirfield_village_hole_13_bunker</name>
 		<LookAt>
 			<longitude>-83.15087160688756</longitude>
 			<latitude>40.14389159602531</latitude>
@@ -3324,7 +3324,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0C2BAE61703120D30A39">
-		<name>murfield_village_hole_13_bunker</name>
+		<name>muirfield_village_hole_13_bunker</name>
 		<LookAt>
 			<longitude>-83.14933621779417</longitude>
 			<latitude>40.14429672537523</latitude>
@@ -3347,7 +3347,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0EC01E8D253120D37605">
-		<name>murfield_village_hole_13_green</name>
+		<name>muirfield_village_hole_13_green</name>
 		<LookAt>
 			<longitude>-83.1493365324463</longitude>
 			<latitude>40.14414944856674</latitude>
@@ -3370,7 +3370,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="085013065E3120D3F6FD">
-		<name>murfield_village_hole_13_bunker</name>
+		<name>muirfield_village_hole_13_bunker</name>
 		<LookAt>
 			<longitude>-83.14912057725172</longitude>
 			<latitude>40.14416375482519</latitude>
@@ -3393,7 +3393,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E4A71EC993120D45896">
-		<name>murfield_village_hole_14_tee</name>
+		<name>muirfield_village_hole_14_tee</name>
 		<LookAt>
 			<longitude>-83.14857080661412</longitude>
 			<latitude>40.1442980221362</latitude>
@@ -3416,7 +3416,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00B54FBD173120D48FCA">
-		<name>murfield_village_hole_14_tee</name>
+		<name>muirfield_village_hole_14_tee</name>
 		<LookAt>
 			<longitude>-83.14857080661412</longitude>
 			<latitude>40.1442980221362</latitude>
@@ -3439,7 +3439,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0AADFA75CB3120D4C254">
-		<name>murfield_village_hole_14_tee</name>
+		<name>muirfield_village_hole_14_tee</name>
 		<LookAt>
 			<longitude>-83.14827739890943</longitude>
 			<latitude>40.14412707599731</latitude>
@@ -3462,7 +3462,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="013BF1A7C23120D4FF97">
-		<name>murfield_village_hole_14_tee</name>
+		<name>muirfield_village_hole_14_tee</name>
 		<LookAt>
 			<longitude>-83.14796158856328</longitude>
 			<latitude>40.14376982228743</latitude>
@@ -3485,7 +3485,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0EBFEB48443120D55E3D">
-		<name>murfield_village_hole_14_fairway</name>
+		<name>muirfield_village_hole_14_fairway</name>
 		<LookAt>
 			<longitude>-83.1464206312822</longitude>
 			<latitude>40.14330507694086</latitude>
@@ -3508,7 +3508,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="06D4CF460F3120D6F5EF">
-		<name>murfield_village_hole_14_water</name>
+		<name>muirfield_village_hole_14_water</name>
 		<LookAt>
 			<longitude>-83.14704913160007</longitude>
 			<latitude>40.1436736743643</latitude>
@@ -3531,7 +3531,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="061BD407D13120D75838">
-		<name>murfield_village_hole_14_fairway</name>
+		<name>muirfield_village_hole_14_fairway</name>
 		<LookAt>
 			<longitude>-83.14570043237687</longitude>
 			<latitude>40.14290993966399</latitude>
@@ -3554,7 +3554,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0A9527CF763120D7BACF">
-		<name>murfield_village_hole_14_bunker</name>
+		<name>muirfield_village_hole_14_bunker</name>
 		<LookAt>
 			<longitude>-83.14563107317106</longitude>
 			<latitude>40.14279700469613</latitude>
@@ -3577,7 +3577,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0DBFA88F6D3120D82F7D">
-		<name>murfield_village_hole_14_bunker</name>
+		<name>muirfield_village_hole_14_bunker</name>
 		<LookAt>
 			<longitude>-83.14549852717751</longitude>
 			<latitude>40.14259991836214</latitude>
@@ -3600,7 +3600,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03B38EFD6C3120D8B282">
-		<name>murfield_village_hole_14_green</name>
+		<name>muirfield_village_hole_14_green</name>
 		<LookAt>
 			<longitude>-83.14569633968073</longitude>
 			<latitude>40.1426635140809</latitude>
@@ -3623,7 +3623,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03ED3CCFAC3120D98B8E">
-		<name>murfield_village_hole_15_water</name>
+		<name>muirfield_village_hole_15_water</name>
 		<LookAt>
 			<longitude>-83.14519669076643</longitude>
 			<latitude>40.14209496071678</latitude>
@@ -3646,7 +3646,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0F7C0B08F13120DF4F88">
-		<name>murfield_village_hole_15_tee</name>
+		<name>muirfield_village_hole_15_tee</name>
 		<LookAt>
 			<longitude>-83.14552075549281</longitude>
 			<latitude>40.14213274562078</latitude>
@@ -3669,7 +3669,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="07B2241CEF3120DF82D2">
-		<name>murfield_village_hole_15_tee</name>
+		<name>muirfield_village_hole_15_tee</name>
 		<LookAt>
 			<longitude>-83.14567942166698</longitude>
 			<latitude>40.14205971860645</latitude>
@@ -3692,7 +3692,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0A97D909013120DFC204">
-		<name>murfield_village_hole_15_tee</name>
+		<name>muirfield_village_hole_15_tee</name>
 		<LookAt>
 			<longitude>-83.14616817987201</longitude>
 			<latitude>40.14192381374799</latitude>
@@ -3715,7 +3715,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="06D758ACFD3120DFEBC6">
-		<name>murfield_village_hole_15_tee</name>
+		<name>muirfield_village_hole_15_tee</name>
 		<LookAt>
 			<longitude>-83.14662204693609</longitude>
 			<latitude>40.14183797885288</latitude>
@@ -3738,7 +3738,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="02D851DBF63120E016C5">
-		<name>murfield_village_hole_15_tee</name>
+		<name>muirfield_village_hole_15_tee</name>
 		<LookAt>
 			<longitude>-83.14698525438949</longitude>
 			<latitude>40.14169700767268</latitude>
@@ -3761,7 +3761,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0A0C68918F3120E12C20">
-		<name>murfield_village_hole_18_tee</name>
+		<name>muirfield_village_hole_18_tee</name>
 		<LookAt>
 			<longitude>-83.14695386662648</longitude>
 			<latitude>40.14146597997207</latitude>
@@ -3784,7 +3784,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03005ED3893120E164D6">
-		<name>murfield_village_hole_18_tee</name>
+		<name>muirfield_village_hole_18_tee</name>
 		<LookAt>
 			<longitude>-83.14643381560241</longitude>
 			<latitude>40.14152345891308</latitude>
@@ -3807,7 +3807,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="01397B82E13120E19630">
-		<name>murfield_village_hole_18_tee</name>
+		<name>muirfield_village_hole_18_tee</name>
 		<LookAt>
 			<longitude>-83.14616884023643</longitude>
 			<latitude>40.14167028610568</latitude>
@@ -3830,7 +3830,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E8564A1463120E1C05A">
-		<name>murfield_village_hole_18_tee</name>
+		<name>muirfield_village_hole_18_tee</name>
 		<LookAt>
 			<longitude>-83.14591831612722</longitude>
 			<latitude>40.1416593599913</latitude>
@@ -3853,7 +3853,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="06EDAF60BB3120E1FCC1">
-		<name>murfield_village_hole_18_tee</name>
+		<name>muirfield_village_hole_18_tee</name>
 		<LookAt>
 			<longitude>-83.14552073697693</longitude>
 			<latitude>40.14168416918779</latitude>
@@ -3876,7 +3876,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="038B544A633120E225E6">
-		<name>murfield_village_hole_18_tee</name>
+		<name>muirfield_village_hole_18_tee</name>
 		<LookAt>
 			<longitude>-83.14552073697693</longitude>
 			<latitude>40.14168416918779</latitude>
@@ -3899,7 +3899,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0426B36B8E3120E3F474">
-		<name>murfield_village_hole_18_water</name>
+		<name>muirfield_village_hole_18_water</name>
 		<LookAt>
 			<longitude>-83.14294001717532</longitude>
 			<latitude>40.1415770492666</latitude>
@@ -3922,7 +3922,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="045539CBC73120E4E611">
-		<name>murfield_village_hole_18_bunker</name>
+		<name>muirfield_village_hole_18_bunker</name>
 		<LookAt>
 			<longitude>-83.14377264250541</longitude>
 			<latitude>40.14129679617742</latitude>
@@ -3945,7 +3945,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="08638382523120E52DF2">
-		<name>murfield_village_hole_18_bunker</name>
+		<name>muirfield_village_hole_18_bunker</name>
 		<LookAt>
 			<longitude>-83.14356716464101</longitude>
 			<latitude>40.14133085368142</latitude>
@@ -3968,7 +3968,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0DDD7DE5873120E56C2A">
-		<name>murfield_village_hole_18_bunker</name>
+		<name>muirfield_village_hole_18_bunker</name>
 		<LookAt>
 			<longitude>-83.14337237866324</longitude>
 			<latitude>40.14128085764636</latitude>
@@ -3991,7 +3991,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="09ED58477E3120E5B32E">
-		<name>murfield_village_hole_18_bunker</name>
+		<name>muirfield_village_hole_18_bunker</name>
 		<LookAt>
 			<longitude>-83.14222038204717</longitude>
 			<latitude>40.14078121653615</latitude>
@@ -4014,7 +4014,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="02E0AC8F1A3120E5F858">
-		<name>murfield_village_hole_18_bunker</name>
+		<name>muirfield_village_hole_18_bunker</name>
 		<LookAt>
 			<longitude>-83.14233129910576</longitude>
 			<latitude>40.14072902208904</latitude>
@@ -4037,7 +4037,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="09A353AB3A3120E6453E">
-		<name>murfield_village_hole_18_bunker</name>
+		<name>muirfield_village_hole_18_bunker</name>
 		<LookAt>
 			<longitude>-83.14205285702336</longitude>
 			<latitude>40.1407739771325</latitude>
@@ -4060,7 +4060,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E167264B43120E6DD21">
-		<name>murfield_village_hole_18_bunker</name>
+		<name>muirfield_village_hole_18_bunker</name>
 		<LookAt>
 			<longitude>-83.14197421960462</longitude>
 			<latitude>40.14060145848413</latitude>
@@ -4083,7 +4083,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0018FED9803120E73919">
-		<name>murfield_village_hole_18_green</name>
+		<name>muirfield_village_hole_18_green</name>
 		<LookAt>
 			<longitude>-83.14195104472276</longitude>
 			<latitude>40.14062426542678</latitude>
@@ -4106,7 +4106,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0FADD1E0223120E7C582">
-		<name>murfield_village_hole_15_bunker</name>
+		<name>muirfield_village_hole_15_bunker</name>
 		<LookAt>
 			<longitude>-83.15091440306567</longitude>
 			<latitude>40.1408974248171</latitude>
@@ -4129,7 +4129,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03B8AD64F63120E7F739">
-		<name>murfield_village_hole_15_bunker</name>
+		<name>muirfield_village_hole_15_bunker</name>
 		<LookAt>
 			<longitude>-83.15091440306567</longitude>
 			<latitude>40.1408974248171</latitude>
@@ -4152,7 +4152,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="09F8C65EF63120E825CF">
-		<name>murfield_village_hole_15_bunker</name>
+		<name>muirfield_village_hole_15_bunker</name>
 		<LookAt>
 			<longitude>-83.1510899857074</longitude>
 			<latitude>40.14091561475924</latitude>
@@ -4175,7 +4175,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00BA8F0D433120E86FE0">
-		<name>murfield_village_hole_15_green</name>
+		<name>muirfield_village_hole_15_green</name>
 		<LookAt>
 			<longitude>-83.1510899857074</longitude>
 			<latitude>40.14091561474868</latitude>
@@ -4198,7 +4198,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0D27F7C2223120E91437">
-		<name>murfield_village_hole_15_water</name>
+		<name>muirfield_village_hole_15_water</name>
 		<LookAt>
 			<longitude>-83.15022361809068</longitude>
 			<latitude>40.14098776400625</latitude>
@@ -4221,7 +4221,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="07E26922FD3120EA050A">
-		<name>murfield_village_hole_15_fairway</name>
+		<name>muirfield_village_hole_15_fairway</name>
 		<LookAt>
 			<longitude>-83.15093269755729</longitude>
 			<latitude>40.1408472490577</latitude>
@@ -4244,7 +4244,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="071081FBB83120EA64CF">
-		<name>murfield_village_hole_15_bunker</name>
+		<name>muirfield_village_hole_15_bunker</name>
 		<LookAt>
 			<longitude>-83.14841092649263</longitude>
 			<latitude>40.14138223400317</latitude>
@@ -4267,7 +4267,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0FED3543183120EA97B0">
-		<name>murfield_village_hole_15_bunker</name>
+		<name>muirfield_village_hole_15_bunker</name>
 		<LookAt>
 			<longitude>-83.14857549379852</longitude>
 			<latitude>40.14136565370656</latitude>
@@ -4290,7 +4290,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0243FD856D3120EAC4AA">
-		<name>murfield_village_hole_15_bunker</name>
+		<name>muirfield_village_hole_15_bunker</name>
 		<LookAt>
 			<longitude>-83.14857549793651</longitude>
 			<latitude>40.14136565212692</latitude>
@@ -4313,7 +4313,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0BC5BB62903120EAEF8F">
-		<name>murfield_village_hole_15_bunker</name>
+		<name>muirfield_village_hole_15_bunker</name>
 		<LookAt>
 			<longitude>-83.14867688166019</longitude>
 			<latitude>40.1413402915959</latitude>
@@ -4336,7 +4336,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="06C79EA9933120EBC2EA">
-		<name>murfield_village_hole_15_fairway</name>
+		<name>muirfield_village_hole_15_fairway</name>
 		<LookAt>
 			<longitude>-83.14763893792859</longitude>
 			<latitude>40.14143226661296</latitude>
@@ -4359,7 +4359,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="077E21ABA23120EC284E">
-		<name>murfield_village_hole_16_tee</name>
+		<name>muirfield_village_hole_16_tee</name>
 		<LookAt>
 			<longitude>-83.15194620092804</longitude>
 			<latitude>40.1404389837608</latitude>
@@ -4382,7 +4382,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="009EF2640B3120ED0689">
-		<name>murfield_village_hole_16_tee</name>
+		<name>muirfield_village_hole_16_tee</name>
 		<LookAt>
 			<longitude>-83.15176864496409</longitude>
 			<latitude>40.14041476005684</latitude>
@@ -4405,7 +4405,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E28DD397B3120ED3EA6">
-		<name>murfield_village_hole_16_tee</name>
+		<name>muirfield_village_hole_16_tee</name>
 		<LookAt>
 			<longitude>-83.15140553780678</longitude>
 			<latitude>40.14031278620258</latitude>
@@ -4428,7 +4428,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="00B4373D3B3120ED65F0">
-		<name>murfield_village_hole_16_tee</name>
+		<name>muirfield_village_hole_16_tee</name>
 		<LookAt>
 			<longitude>-83.15101161887614</longitude>
 			<latitude>40.14013790682154</latitude>
@@ -4451,7 +4451,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E57777D2C3120ED8C93">
-		<name>murfield_village_hole_16_tee</name>
+		<name>muirfield_village_hole_16_tee</name>
 		<LookAt>
 			<longitude>-83.15101166082857</longitude>
 			<latitude>40.14013792392285</latitude>
@@ -4474,7 +4474,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="019C79D25E3120EDE819">
-		<name>murfield_village_hole_16_water</name>
+		<name>muirfield_village_hole_16_water</name>
 		<LookAt>
 			<longitude>-83.15011281873875</longitude>
 			<latitude>40.14027070045178</latitude>
@@ -4497,7 +4497,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0AEC4F218F3120EE51C8">
-		<name>murfield_village_hole_16_green</name>
+		<name>muirfield_village_hole_16_green</name>
 		<LookAt>
 			<longitude>-83.14968728685855</longitude>
 			<latitude>40.1401885635064</latitude>
@@ -4520,7 +4520,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="08EB0CD74B3120EE8FFD">
-		<name>murfield_village_hole_16_bunker</name>
+		<name>muirfield_village_hole_16_bunker</name>
 		<LookAt>
 			<longitude>-83.1497527140403</longitude>
 			<latitude>40.14011450921272</latitude>
@@ -4543,7 +4543,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="09B122ECA63120EED8DA">
-		<name>murfield_village_hole_16_bukner</name>
+		<name>muirfield_village_hole_16_bukner</name>
 		<LookAt>
 			<longitude>-83.14954508016056</longitude>
 			<latitude>40.14014010725113</latitude>
@@ -4566,7 +4566,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="023827946D3120EF1EF4">
-		<name>murfield_village_hole_16_bukner</name>
+		<name>muirfield_village_hole_16_bukner</name>
 		<LookAt>
 			<longitude>-83.14949467121166</longitude>
 			<latitude>40.14032237576657</latitude>
@@ -4589,7 +4589,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="02560E28C43120EFC39A">
-		<name>murfield_village_hole_16_fairway</name>
+		<name>muirfield_village_hole_16_fairway</name>
 		<LookAt>
 			<longitude>-83.14989499774333</longitude>
 			<latitude>40.14018934650268</latitude>
@@ -4612,7 +4612,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0854F4FC273120F01A80">
-		<name>murfield_village_hole_17_tee</name>
+		<name>muirfield_village_hole_17_tee</name>
 		<LookAt>
 			<longitude>-83.15099289138372</longitude>
 			<latitude>40.13928730117477</latitude>
@@ -4635,7 +4635,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0886CF98CF3120F06035">
-		<name>murfield_village_hole_17_tee</name>
+		<name>muirfield_village_hole_17_tee</name>
 		<LookAt>
 			<longitude>-83.15012378792152</longitude>
 			<latitude>40.13938420497985</latitude>
@@ -4658,7 +4658,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0804E8322C3120F08E46">
-		<name>murfield_village_hole_17_tee</name>
+		<name>muirfield_village_hole_17_tee</name>
 		<LookAt>
 			<longitude>-83.14971975113525</longitude>
 			<latitude>40.13946415551355</latitude>
@@ -4681,7 +4681,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0C99CDA7543120F0B9F0">
-		<name>murfield_village_hole_17_tee</name>
+		<name>muirfield_village_hole_17_tee</name>
 		<LookAt>
 			<longitude>-83.14910786885603</longitude>
 			<latitude>40.13960322303346</latitude>
@@ -4704,7 +4704,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="06A4D2553E3120F0FA20">
-		<name>murfield_village_hole_17_bunker</name>
+		<name>muirfield_village_hole_17_bunker</name>
 		<LookAt>
 			<longitude>-83.14800880979256</longitude>
 			<latitude>40.14028250891627</latitude>
@@ -4727,7 +4727,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="02E38BE11B3120F151A1">
-		<name>murfield_village_hole_17_bunker</name>
+		<name>muirfield_village_hole_17_bunker</name>
 		<LookAt>
 			<longitude>-83.14773544470495</longitude>
 			<latitude>40.14026496615229</latitude>
@@ -4750,7 +4750,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0B39E1759D3120F17B3D">
-		<name>murfield_village_hole_17_bunker</name>
+		<name>muirfield_village_hole_17_bunker</name>
 		<LookAt>
 			<longitude>-83.14763113666707</longitude>
 			<latitude>40.1403625436243</latitude>
@@ -4773,7 +4773,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0C9AA7DE733120F1C996">
-		<name>murfield_village_hole_17_bunker</name>
+		<name>muirfield_village_hole_17_bunker</name>
 		<LookAt>
 			<longitude>-83.14629900760256</longitude>
 			<latitude>40.14093720239513</latitude>
@@ -4796,7 +4796,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="048743A7A93120F1FBB3">
-		<name>murfield_village_hole_17_bunker</name>
+		<name>muirfield_village_hole_17_bunker</name>
 		<LookAt>
 			<longitude>-83.1461510629202</longitude>
 			<latitude>40.14096124598221</latitude>
@@ -4819,7 +4819,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0EB2FC594C3120F236E5">
-		<name>murfield_village_hole_17_bunker</name>
+		<name>muirfield_village_hole_17_bunker</name>
 		<LookAt>
 			<longitude>-83.14620353801759</longitude>
 			<latitude>40.14112931031242</latitude>
@@ -4842,7 +4842,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="03AFA006153120F292D8">
-		<name>murfield_village_hole_17_green</name>
+		<name>muirfield_village_hole_17_green</name>
 		<LookAt>
 			<longitude>-83.14622091491572</longitude>
 			<latitude>40.14105291973899</latitude>
@@ -4865,7 +4865,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0131C0F84B3120F30427">
-		<name>murfield_village_hole_17_water</name>
+		<name>muirfield_village_hole_17_water</name>
 		<LookAt>
 			<longitude>-83.14652386709326</longitude>
 			<latitude>40.14098840786871</latitude>
@@ -4888,7 +4888,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0E1BE8A4CD3120F3DE37">
-		<name>murfield_village_hole_17_fairway</name>
+		<name>muirfield_village_hole_17_fairway</name>
 		<LookAt>
 			<longitude>-83.1467299962859</longitude>
 			<latitude>40.14065903365506</latitude>
@@ -4911,7 +4911,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0F573552093120F427D5">
-		<name>murfield_village_hole_17_bunker</name>
+		<name>muirfield_village_hole_17_bunker</name>
 		<LookAt>
 			<longitude>-83.1482982980767</longitude>
 			<latitude>40.14025032279371</latitude>
@@ -4934,7 +4934,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0C524272513120F5732A">
-		<name>murfield_village_hole_18_fairway</name>
+		<name>muirfield_village_hole_18_fairway</name>
 		<LookAt>
 			<longitude>-83.14418201377647</longitude>
 			<latitude>40.14154627992207</latitude>
@@ -4957,7 +4957,7 @@
 		</Polygon>
 	</Placemark>
 	<Placemark id="0ECB63C7533120F917E9">
-		<name>murfield_village_hole_5_fairway</name>
+		<name>muirfield_village_hole_5_fairway</name>
 		<LookAt>
 			<longitude>-83.1334992894888</longitude>
 			<latitude>40.146896589603</latitude>

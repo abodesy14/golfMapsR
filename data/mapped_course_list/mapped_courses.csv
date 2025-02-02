@@ -1,18 +1,18 @@
-﻿course_id,course_name,city,state,trace_date
-10001,erin_hills,Hartford,WI,4/26/24
-10002,fieldstone,Auburn Hills,MI,4/22/24
-10003,pine_trace,Rochester Hills,MI,4/23/24
-10004,augusta_national,Augusta,GA,4/27/24
-10005,kiawah_island_ocean_course,Kiawah Island,SC,4/28/24
-10006,tpc_craig_ranch,McKinney,TX,5/5/24
-10007,quail_hollow,Charlotte,NC,5/10/24
-10008,valhalla,Louisville,KY,5/14/24
-10009,murfield_village,Dublin,OH,6/5/24
-10010,cypress_point,Pebble Beach,CA,10/2/24
-10011,crown_golf_club,Traverse City,MI,10/4/24
-10012,pebble_beach,Pebble Beach,CA,10/4/24
-10013,belvedere,Charlevoix,MI,10/5/24
-10014,katke_cousins,Rochester,MI,10/5/24
-10015,raven_golf_club,Phoenix,AZ,10/5/24
-10016,oakmont,Plum,PA,1/27/25
-10017,oakland_hills_north,Bloomfield Hills,MI,1/28/25
+﻿course_id,api_id,course_name,city,state,trace_date
+10001,13264,erin_hills,Hartford,WI,4/26/24
+10002,29081,fieldstone,Auburn Hills,MI,4/22/24
+10003,29279,pine_trace,Rochester Hills,MI,4/23/24
+10004,,augusta_national,Augusta,GA,4/27/24
+10005,,kiawah_island_ocean_course,Kiawah Island,SC,4/28/24
+10006,20998,tpc_craig_ranch,McKinney,TX,5/5/24
+10007,17245,quail_hollow,Charlotte,NC,5/10/24
+10008,4734,valhalla,Louisville,KY,5/14/24
+10009,21879,muirfield_village,Dublin,OH,6/5/24
+10010,24647,cypress_point,Pebble Beach,CA,10/2/24
+10011,,crown_golf_club,Traverse City,MI,10/4/24
+10012,24636,pebble_beach,Pebble Beach,CA,10/4/24
+10013,29173,belvedere,Charlevoix,MI,10/5/24
+10014,29175,katke_cousins,Rochester,MI,10/5/24
+10015,6636,raven_golf_club,Phoenix,AZ,10/5/24
+10016,22178,oakmont,Plum,PA,1/27/25
+10017,29024,oakland_hills_north,Bloomfield Hills,MI,1/28/25
