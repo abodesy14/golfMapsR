@@ -1,5 +1,5 @@
-﻿course_id,api_id,course_name,city,state,trace_date
-10001,13264,erin_hills,Hartford,WI,4/26/24
+﻿course_id,api_id,course_name,city,state,trace_date,logo_url
+10001,13264,erin_hills,Hartford,WI,4/26/24,https://raw.githubusercontent.com/abodesy14/golfMapsR/refs/heads/main/images/logos/erin_hills.png
 10002,29081,fieldstone,Auburn Hills,MI,4/22/24
 10003,29279,pine_trace,Rochester Hills,MI,4/23/24
 10004,,augusta_national,Augusta,GA,4/27/24
