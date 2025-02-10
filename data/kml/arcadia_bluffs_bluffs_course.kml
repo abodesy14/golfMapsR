@@ -19,7 +19,7 @@
 		<SimpleField type="string" name="surface">
 		</SimpleField>
 	</Schema>
-	<gx:CascadingStyle kml:id="__managed_style_24707F21223609844C1F">
+	<gx:CascadingStyle kml:id="__managed_style_2031090CA23625E0CC02">
 		<Style>
 			<IconStyle>
 				<scale>1.2</scale>
@@ -42,7 +42,7 @@
 			</BalloonStyle>
 		</Style>
 	</gx:CascadingStyle>
-	<gx:CascadingStyle kml:id="__managed_style_17A6EB5AA33609844C1F">
+	<gx:CascadingStyle kml:id="__managed_style_18E24252983625E0CC02">
 		<Style>
 			<IconStyle>
 				<Icon>
@@ -64,14 +64,14 @@
 			</BalloonStyle>
 		</Style>
 	</gx:CascadingStyle>
-	<StyleMap id="__managed_style_09A8B0F32F3609844C1F">
+	<StyleMap id="__managed_style_06108810DA3625E0CC02">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#__managed_style_17A6EB5AA33609844C1F</styleUrl>
+			<styleUrl>#__managed_style_18E24252983625E0CC02</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#__managed_style_24707F21223609844C1F</styleUrl>
+			<styleUrl>#__managed_style_2031090CA23625E0CC02</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Folder id="0D4343472036045CB1B6">
@@ -451,7 +451,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark id="DF8741B76B36045D1307">
-			<name>arcadia_bluffs_bluffs_course_hole_3__fairway</name>
+			<name>arcadia_bluffs_bluffs_course_hole_3_fairway</name>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -638,7 +638,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark id="16BE832819D36045D1307">
-			<name>arcadia_bluffs_bluffs_course_hole_4__fairway</name>
+			<name>arcadia_bluffs_bluffs_course_hole_4_fairway</name>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -746,7 +746,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark id="1DEDD35B46736045D1307">
-			<name>arcadia_bluffs_bluffs_course_hole_5__fairway</name>
+			<name>arcadia_bluffs_bluffs_course_hole_5_fairway</name>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -826,7 +826,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark id="208B67463F036045D1307">
-			<name>arcadia_bluffs_bluffs_course_hole_5__fairway</name>
+			<name>arcadia_bluffs_bluffs_course_hole_5_fairway</name>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1305,7 +1305,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark id="3A24245283536045D1307">
-			<name>arcadia_bluffs_bluffs_course_hole_2__fairway</name>
+			<name>arcadia_bluffs_bluffs_course_hole_2_fairway</name>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -3277,7 +3277,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark id="1BA61EC87B236045D1308">
-			<name>arcadia_bluffs_bluffs_course_hole_16__fairway</name>
+			<name>arcadia_bluffs_bluffs_course_hole_16_fairway</name>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -9464,33 +9464,6 @@
 				</outerBoundaryIs>
 			</Polygon>
 		</Placemark>
-		<Placemark id="7EC6ECD3F1B36045D1309">
-			<name>arcadia_bluffs_bluffs_course_hole_1_bunker</name>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<ExtendedData>
-				<SchemaData schemaUrl="#arcadia_bluffs">
-					<SimpleData name="osm_id">744217245</SimpleData>
-					<SimpleData name="golf">bunker</SimpleData>
-					<SimpleData name="natural">sand</SimpleData>
-				</SchemaData>
-			</ExtendedData>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							-86.2347977,44.4583207,0 -86.2348248,44.4583207,0 -86.23484550000001,44.4583071,0 -86.2348566,44.4582934,0 -86.23486459999999,44.4582775,0 -86.2348805,44.4582605,0 -86.2348868,44.4582423,0 -86.2348868,44.4582196,0 -86.2348805,44.458198,0 -86.23488209999999,44.4581651,0 -86.2348757,44.4581492,0 -86.2348677,44.4581355,0 -86.2348423,44.4581412,0 -86.23482319999999,44.4581605,0 -86.2348136,44.4581776,0 -86.2347977,44.4581867,0 -86.2347707,44.4581878,0 -86.23474040000001,44.458181,0 -86.23471809999999,44.458173,0 -86.23469110000001,44.4581742,0 -86.2346768,44.4581923,0 -86.23468149999999,44.4582151,0 -86.23469350000001,44.4582293,0 -86.2347058,44.458242,0 -86.23470880000001,44.4582632,0 -86.2347135,44.4582774,0 -86.23472839999999,44.4582855,0 -86.2347419,44.4582948,0 -86.23476839999999,44.4583054,0 -86.2347977,44.4583207,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
 		<Placemark id="7FF12261A1E36045D1309">
 			<name>arcadia_bluffs_bluffs_course_hole_1_bunker</name>
 			<Style>
@@ -9546,7 +9519,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark id="8168CA7651136045D1309">
-			<name>arcadia_bluffs_bluffs_course_hole_1__fairway</name>
+			<name>arcadia_bluffs_bluffs_course_hole_1_fairway</name>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -9565,7 +9538,7 @@
 				<outerBoundaryIs>
 					<LinearRing>
 						<coordinates>
-							-86.2347496,44.4585985,0 -86.23480309999999,44.4585986,0 -86.2348551,44.4586105,0 -86.23491180000001,44.4586342,0 -86.23496230000001,44.458666,0 -86.2350278,44.4587045,0 -86.23508649999999,44.4587347,0 -86.23514470000001,44.4587608,0 -86.23521119999999,44.4587889,0 -86.23528640000001,44.4588122,0 -86.2354241,44.4588197,0 -86.23551019999999,44.4588303,0 -86.2355867,44.4588368,0 -86.2356419,44.4588344,0 -86.23571459999999,44.4588188,0 -86.2357664,44.4587911,0 -86.23581230000001,44.4587579,0 -86.23584169999999,44.4587314,0 -86.2358787,44.458711,0 -86.23594439999999,44.4587095,0 -86.2360013,44.4587149,0 -86.2360509,44.4587409,0 -86.2360726,44.4587683,0 -86.2360889,44.4588023,0 -86.2360831,44.4588458,0 -86.23613520000001,44.4588341,0 -86.2361923,44.4588593,0 -86.2362426,44.4588776,0 -86.23629409999999,44.4588776,0 -86.23634749999999,44.4588697,0 -86.2364128,44.4588592,0 -86.2364541,44.4588519,0 -86.2365341,44.4588387,0 -86.2366844,44.458832,0 -86.2367654,44.4588356,0 -86.2368347,44.4588545,0 -86.2369077,44.4588879,0 -86.2369673,44.4589115,0 -86.23703260000001,44.4589336,0 -86.23712380000001,44.4589322,0 -86.2372146,44.4589151,0 -86.2373264,44.4588884,0 -86.2374119,44.4588699,0 -86.2374844,44.45886,0 -86.2375466,44.4588495,0 -86.2376203,44.4588432,0 -86.2377559,44.458829,0 -86.2379104,44.4587841,0 -86.2380347,44.458733,0 -86.23815519999999,44.4586631,0 -86.238223,44.4586066,0 -86.2382569,44.4585421,0 -86.2383172,44.4584426,0 -86.2383813,44.4583485,0 -86.23844149999999,44.4582974,0 -86.238434,44.4582328,0 -86.23834739999999,44.4581549,0 -86.23824190000001,44.4581226,0 -86.2381213,44.458128,0 -86.2380083,44.4582086,0 -86.237948,44.4582759,0 -86.2378538,44.4583108,0 -86.23771069999999,44.4583592,0 -86.2375562,44.4584103,0 -86.2374394,44.4584883,0 -86.2373453,44.4585501,0 -86.23724350000001,44.4585824,0 -86.2371042,44.4585958,0 -86.2368857,44.4585851,0 -86.2366408,44.4585743,0 -86.2364487,44.4585636,0 -86.2363469,44.4585528,0 -86.2361435,44.4585071,0 -86.2359853,44.4584641,0 -86.2358007,44.4584264,0 -86.2356425,44.4584103,0 -86.2355068,44.4583834,0 -86.2353976,44.4583108,0 -86.2352243,44.4581979,0 -86.2351037,44.4581683,0 -86.23494549999999,44.4581011,0 -86.2347709824207,44.45802544669211,0 -86.2346027,44.4579693,0 -86.234452,44.457972,0 -86.2342749,44.4580365,0 -86.23421089999999,44.4580876,0 -86.23419579999999,44.458136,0 -86.23423572758841,44.45819200665297,0 -86.2342938,44.4582355,0 -86.234354,44.4582893,0 -86.2344294,44.458335,0 -86.2344485,44.4583645,0 -86.23445150000001,44.4583924,0 -86.23446370000001,44.4584439,0 -86.2344897,44.4584856,0 -86.23455370000001,44.4585421,0 -86.2346404,44.4585878,0 -86.2347496,44.4585985,0 
+							-86.2347496,44.4585985,0 -86.23480309999999,44.4585986,0 -86.2348551,44.4586105,0 -86.23491180000001,44.4586342,0 -86.23496230000001,44.458666,0 -86.2350278,44.4587045,0 -86.23508649999999,44.4587347,0 -86.23514470000001,44.4587608,0 -86.23521119999999,44.4587889,0 -86.23528640000001,44.4588122,0 -86.2354241,44.4588197,0 -86.23551019999999,44.4588303,0 -86.2355867,44.4588368,0 -86.2356419,44.4588344,0 -86.23571459999999,44.4588188,0 -86.2357664,44.4587911,0 -86.23581230000001,44.4587579,0 -86.23584169999999,44.4587314,0 -86.2358787,44.458711,0 -86.23594439999999,44.4587095,0 -86.2360013,44.4587149,0 -86.2360509,44.4587409,0 -86.2360726,44.4587683,0 -86.2360889,44.4588023,0 -86.2360831,44.4588458,0 -86.23613520000001,44.4588341,0 -86.2361923,44.4588593,0 -86.2362426,44.4588776,0 -86.23629409999999,44.4588776,0 -86.23634749999999,44.4588697,0 -86.2364128,44.4588592,0 -86.2364541,44.4588519,0 -86.2365341,44.4588387,0 -86.2366844,44.458832,0 -86.2367654,44.4588356,0 -86.2368347,44.4588545,0 -86.2369077,44.4588879,0 -86.2369673,44.4589115,0 -86.23703260000001,44.4589336,0 -86.23712380000001,44.4589322,0 -86.2372146,44.4589151,0 -86.2373264,44.4588884,0 -86.2374119,44.4588699,0 -86.2374844,44.45886,0 -86.2375466,44.4588495,0 -86.2376203,44.4588432,0 -86.2377559,44.458829,0 -86.2379104,44.4587841,0 -86.2380347,44.458733,0 -86.23815519999999,44.4586631,0 -86.238223,44.4586066,0 -86.2382569,44.4585421,0 -86.2383172,44.4584426,0 -86.2383813,44.4583485,0 -86.23844149999999,44.4582974,0 -86.238434,44.4582328,0 -86.23834739999999,44.4581549,0 -86.23824190000001,44.4581226,0 -86.2381213,44.458128,0 -86.2380083,44.4582086,0 -86.237948,44.4582759,0 -86.2378538,44.4583108,0 -86.23771069999999,44.4583592,0 -86.2375562,44.4584103,0 -86.2374394,44.4584883,0 -86.2373453,44.4585501,0 -86.23724350000001,44.4585824,0 -86.2371042,44.4585958,0 -86.2368857,44.4585851,0 -86.2366408,44.4585743,0 -86.2364487,44.4585636,0 -86.2363469,44.4585528,0 -86.2361435,44.4585071,0 -86.2359853,44.4584641,0 -86.2358007,44.4584264,0 -86.2356425,44.4584103,0 -86.2355068,44.4583834,0 -86.2353976,44.4583108,0 -86.2352243,44.4581979,0 -86.2351037,44.4581683,0 -86.23494549999999,44.4581011,0 -86.2348306143426,44.45804706747597,0 -86.23467989490563,44.45799883826798,0 -86.234452,44.457972,0 -86.2342749,44.4580365,0 -86.23421089999999,44.4580876,0 -86.23419579999999,44.458136,0 -86.23423572758841,44.45819200665297,0 -86.2342938,44.4582355,0 -86.234354,44.4582893,0 -86.2344294,44.458335,0 -86.2344485,44.4583645,0 -86.23445150000001,44.4583924,0 -86.23446370000001,44.4584439,0 -86.2344897,44.4584856,0 -86.23455370000001,44.4585421,0 -86.2346404,44.4585878,0 -86.2347496,44.4585985,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
@@ -9741,7 +9714,7 @@
 				<range>104.3287485581459</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9764,7 +9737,7 @@
 				<range>109.362772484692</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9787,7 +9760,7 @@
 				<range>66.28181528270945</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9810,7 +9783,7 @@
 				<range>145.3660788805792</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9833,7 +9806,7 @@
 				<range>125.9204902145211</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9856,7 +9829,7 @@
 				<range>445.5020144971786</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9879,7 +9852,7 @@
 				<range>494.7073162547896</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9902,7 +9875,7 @@
 				<range>104.2550669697812</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9925,7 +9898,7 @@
 				<range>58.45177324619728</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9948,7 +9921,7 @@
 				<range>73.87422898178558</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9971,7 +9944,7 @@
 				<range>54.00355734906952</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -9994,7 +9967,7 @@
 				<range>55.42509746180258</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -10017,7 +9990,7 @@
 				<range>93.30230117712745</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -10040,7 +10013,7 @@
 				<range>105.8703254579632</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -10063,7 +10036,7 @@
 				<range>611.9807308777673</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -10086,12 +10059,35 @@
 				<range>580.338857652605</range>
 				<altitudeMode>absolute</altitudeMode>
 			</LookAt>
-			<styleUrl>#__managed_style_09A8B0F32F3609844C1F</styleUrl>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
 						<coordinates>
 							-86.25160590811325,44.45891475309438,0 -86.25161221488548,44.45907002906615,0 -86.25157897871546,44.45935094669085,0 -86.25154340308079,44.45970130889189,0 -86.25149336020746,44.46028946854836,0 -86.25142925268709,44.46065418656049,0 -86.25190721649865,44.46067459043178,0 -86.25194627609389,44.46048591113784,0 -86.25196477953708,44.46010938274345,0 -86.25204473667614,44.45950651813874,0 -86.2520679272822,44.45917797520327,0 -86.25212943524748,44.45873875929454,0 -86.25163832642014,44.45869619725082,0 -86.25160590811325,44.45891475309438,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="0D564625D73625E4CBEE">
+			<name>arcadia_bluffs_bluffs_course_hole_1_bunker</name>
+			<LookAt>
+				<longitude>-86.23533118745171</longitude>
+				<latitude>44.45833520293211</latitude>
+				<altitude>254.8759475497497</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<gx:fovy>35</gx:fovy>
+				<range>222.6773256602246</range>
+				<altitudeMode>absolute</altitudeMode>
+			</LookAt>
+			<styleUrl>#__managed_style_06108810DA3625E0CC02</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-86.23472495062533,44.45816460029098,0 -86.23467890069399,44.45817316960706,0 -86.23466758831751,44.45822711452799,0 -86.23470978890968,44.45831694538109,0 -86.23480004892588,44.45834323033505,0 -86.23486775143957,44.45832747412839,0 -86.234900381606,44.45822633431894,0 -86.23489268050487,44.45813814789197,0 -86.23483828627613,44.45813604775874,0 -86.23478922359725,44.45817130986722,0 -86.23472495062533,44.45816460029098,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
