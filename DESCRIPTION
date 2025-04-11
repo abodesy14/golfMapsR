@@ -1,0 +1,25 @@
+Package: golfMapsR
+Title: Tools for Golf Course Mapping and Visualization
+Version: 0.1.0
+Authors@R: person("Adam", "Beaudet", email = "adam.c.beaudet@gmail.com", role = c("aut", "cre"))
+Description: Functions for loading, plotting, and working with golf course geospatial data.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    sf,
+    ggplot2,
+    dplyr,
+    tidyverse,
+    stringr,
+    shiny,
+    shinyWidgets,
+    shinybusy,
+    shinythemes,
+    gt,
+    gtExtras,
+    base64enc,
+    magick,
+    RSQLite,
+    future
+RoxygenNote: 7.2.3
