@@ -1,6 +1,6 @@
 # golfMapsR
 
-Welcome to <strong>golfMapsR</strong>, an R package for working with and visualizing geospatial golf course data. The data is made up of golf course polygons (greens, fairways, tee boxes, bunkers, hazards, etc), sourced from Google Earth and OpenStreetMap.
+Welcome to <strong>golfMapsR</strong>, an R package for working with and visualizing geospatial golf course data. The data consists of detailed golf course polygons (greens, fairways, tee boxes, bunkers, hazards, etc), sourced from Google Earth and OpenStreetMap.
 
 <p align="center">
   <img alt="Light" src="images/maps/erin_hills.png" width="45%">
