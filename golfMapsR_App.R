@@ -1,9 +1,10 @@
 # load libraries
 {
   library(sf)
-  library(tidyverse)
   library(ggplot2)
+  library(dplyr)
   library(stringr)  
+  library(purrr)
   library(shiny)
   library(shinyWidgets)
   library(shinybusy)
@@ -12,7 +13,6 @@
   library(gtExtras)
   library(base64enc)
   library(magick)
-  library(RSQLite)
 }
 
 geojson_df <- readRDS("data/geojson_df.rds")

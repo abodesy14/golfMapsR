@@ -10,8 +10,8 @@ Imports:
     sf,
     ggplot2,
     dplyr,
-    tidyverse,
     stringr,
+    purrr,
     shiny,
     shinyWidgets,
     shinybusy,
@@ -19,7 +19,5 @@ Imports:
     gt,
     gtExtras,
     base64enc,
-    magick,
-    RSQLite,
-    future
+    magick
 RoxygenNote: 7.2.3
