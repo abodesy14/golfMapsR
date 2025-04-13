@@ -1,22 +1,21 @@
-# Load necessary libraries
+# load libraries
 library(sf)
 library(tidyverse)
 library(stringr)
 
-# Function to load and process KML files into RDA format for course polygons
+# loop through kml files to list out files in directory
 update_course_rda_files <- function() {
-  # List KML files in the directory
   kml_files <- list.files("data/kml", pattern = "\\.kml$", full.names = TRUE, recursive = TRUE)
 
-  # Read and combine all KML files
+  # combine kml files
   kml_df <- bind_rows(lapply(kml_files, st_read)) %>%
     rename(polygon_name = Name) %>%
     filter(!(polygon_name %in% c("Practice green", "Practice Area", "Driving Range", "", "Putting Green")))
 
-  # Convert to sf object (geometry)
+  # convert to sf
   geojson_df <- st_as_sf(kml_df, "POLYGON")
 
-  # Read the course database
+  # read course database
   course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")
   course_db$course_name <- gsub("_", " ", course_db$course_name_raw)
   course_db$course_name <- str_to_title(course_db$course_name)
@@ -26,14 +25,15 @@ update_course_rda_files <- function() {
     course_db$course_name_raw, ".png"
   )
 
-  # Extract course_name_raw from polygon name
+  # extract course_name_raw
   geojson_df$course_name_raw <- str_match(geojson_df$polygon_name, "^(.+)_hole")[, 2]
 
-  # Join with course DB (this now brings in api_id too!)
+  # join with course database
+  # transform so maps directionally will point north
   geojson_df <- left_join(geojson_df, course_db, by = "course_name_raw")
   geojson_df <- st_transform(geojson_df, "+proj=utm +zone=15 +datum=WGS84")
 
-  # Add polygon info
+  # assign colors and course_element descriptors
   geojson_df <- geojson_df %>%
     mutate(color = case_when(
       grepl("_tee$", polygon_name) ~ "#57B740",
@@ -59,11 +59,11 @@ update_course_rda_files <- function() {
       total_sq_ft = as.numeric(area) * 10.7639
     )
 
-  # ➕ NEW: Add distance from each polygon to its green centroid
+  # calculate distance to each centroid
   geojson_df$distance_to_green_yards <- NA_real_
 
   for (hole in unique(geojson_df$course_hole_concat)) {
-    # Get green geometry for the hole
+    # green geometry for hole
     green_geom <- geojson_df %>%
       filter(course_hole_concat == hole, grepl("_green$", polygon_name)) %>%
       pull(geometry)
@@ -77,13 +77,13 @@ update_course_rda_files <- function() {
     }
   }
 
-  # Filter valid courses
+  # filter to just valid courses 
   valid_courses <- geojson_df %>%
     filter(!is.na(api_id), !is.na(course_name_concat), course_name_concat != "NA - NA, NA") %>%
     pull(api_id) %>%
     unique()
 
-  # Save each course separately using api_id
+  # save each to rda file
   for (cid in valid_courses) {
     course_data <- geojson_df %>% filter(api_id == cid)
     save(course_data, file = paste0("data/rda/", cid, "_data.rda"))
@@ -92,5 +92,5 @@ update_course_rda_files <- function() {
   message("✅ RDA files have been written by api_id")
 }
 
-# Run the function
+# run function
 update_course_rda_files()
