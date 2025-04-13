@@ -22,7 +22,7 @@ library(golfMapsR)
 - ```plot_course(api_id)``` : Plots a full golf course for the api_id supplied. Future enhancements may include color customization options.
 - ```plot_hole(api_id, hole_number)``` : Plots single hole for specified course.
 
-## Data and Contributing:
+## Contributing:
 To request a new course mapping, just fill out the Issues Template. If you have any questions or interest in contributing, feel free to make a PR and/or reach out to me at adam.c.beaudet@gmail.com.
 
 ## Shiny App:
