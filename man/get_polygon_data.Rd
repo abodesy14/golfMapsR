@@ -2,16 +2,18 @@
 % Please edit documentation in R/get_polygon_data.R
 \name{get_polygon_data}
 \alias{get_polygon_data}
-\title{Get polygon data for a course}
+\title{Get polygon data for a course, optionally filtered by hole number(s)}
 \usage{
-get_polygon_data(api_id)
+get_polygon_data(api_id, hole_num = NULL)
 }
 \arguments{
 \item{api_id}{The ID of the course}
+
+\item{hole_num}{Optional. A single number, vector (i.e., c(1, 3)), or range (i.e., 1:18)}
 }
 \value{
-An sf object with course polygons. Grain of table is one row per hole element.
+An sf object with course polygons filtered by hole
 }
 \description{
-Get polygon data for a course
+Get polygon data for a course, optionally filtered by hole number(s)
 }

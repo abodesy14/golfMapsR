@@ -4,10 +4,12 @@
 \alias{plot_course}
 \title{Plot a golf course map by API ID}
 \usage{
-plot_course(api_id)
+plot_course(api_id, hole_num = NULL)
 }
 \arguments{
 \item{api_id}{The course API ID (numeric or character)}
+
+\item{hole_num}{Optional. A hole number or vector of hole numbers to filter (i.e., 1, c(1,3,7), 1:18)}
 }
 \value{
 A ggplot object showing the course layout
