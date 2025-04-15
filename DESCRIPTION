@@ -10,7 +10,6 @@ Imports:
     sf,
     ggplot2,
     dplyr,
-    stringr,
     purrr
 Suggests:
     shiny,

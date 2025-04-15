@@ -18,7 +18,7 @@ update_course_rda_files <- function() {
   # read course database
   course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")
   course_db$course_name <- gsub("_", " ", course_db$course_name_raw)
-  course_db$course_name <- str_to_title(course_db$course_name)
+  course_db$course_name <- tools::toTitleCase(course_db$course_name)
   course_db$course_name_concat <- paste0(course_db$course_name, " - ", course_db$city, ", ", course_db$state)
   course_db$logo_url <- paste0(
     "https://raw.githubusercontent.com/abodesy14/golfMapsR/refs/heads/main/images/logos/",
@@ -26,7 +26,7 @@ update_course_rda_files <- function() {
   )
 
   # extract course_name_raw
-  geojson_df$course_name_raw <- str_match(geojson_df$polygon_name, "^(.+)_hole")[, 2]
+  geojson_df$course_name_raw <- sub("^(.+)_hole.*", "\\1", geojson_df$polygon_name)
 
   # join with course database
   # transform so maps directionally will point north
