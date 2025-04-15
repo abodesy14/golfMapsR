@@ -3,4 +3,3 @@
 export(get_mapped_courses)
 export(get_polygon_data)
 export(plot_course)
-export(plot_hole)

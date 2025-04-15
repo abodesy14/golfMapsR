@@ -11,7 +11,8 @@ Imports:
     ggplot2,
     dplyr,
     stringr,
-    purrr,
+    purrr
+Suggests:
     shiny,
     shinyWidgets,
     shinybusy,

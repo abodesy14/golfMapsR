@@ -1,11 +1,17 @@
 #' Plot a golf course map by API ID
 #'
 #' @param api_id The course API ID (numeric or character)
+#' @param hole_num Optional. A hole number or vector of hole numbers to filter (e.g., 1, c(1,3,7), 1:18)
 #'
 #' @return A ggplot object showing the course layout
 #' @export
-plot_course <- function(api_id) {
+plot_course <- function(api_id, hole_num = NULL) {
   course_data <- get_polygon_data(api_id)
+
+  # Filter if hole_num is specified
+  if (!is.null(hole_num)) {
+    course_data <- dplyr::filter(course_data, hole_num %in% !!hole_num)
+  }
 
   # base map with all course elements
   p <- ggplot() +
