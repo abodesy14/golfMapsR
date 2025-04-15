@@ -19,8 +19,9 @@ library(golfMapsR)
 ## Functions:
 - ```get_mapped_courses()``` : Start here to get a list of mapped courses. The returned table includes an api_id for each course, which can be used as inputs to the other functions for retrieving or plotting specific courses.
 - ```get_polygon_data(api_id)``` : Retrieves polygon level data for a given golf course. This returns an sf object with the type of polygon, square footage of the polygon, the course, hole number, distance to the green from each polygon, etc. The distance calculation is math-based and uses a “as the crow flies” method (straight line distance between centroids). Metrics such as average green size and number of bunkers can be calculated from this data.
-- ```plot_course(api_id)``` : Plots a full golf course for the api_id supplied. Future enhancements may include color customization options.
-- ```plot_hole(api_id, hole_number)``` : Plots single hole for specified course.
+- ```plot_course(api_id, hole_num)``` : Plots a full golf course for the api_id supplied and hole numbers supplied. If no argument is entered for hole_num, the whole course will be plotted. Here's an example of how you can plot Amen Corner at Augusta: <br> <br>
+```plot_course(api_id = "30000000", hole_num = c(11,12,13))```
+
 
 ## Shiny App:
 You can interact with my Shiny app here to see which courses have been mapped: https://abodesy14.shinyapps.io/golfMapsR/
