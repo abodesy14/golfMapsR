@@ -13,7 +13,7 @@ plot_course <- function(api_id, hole_num = NULL) {
   }
 
   p <- ggplot2::ggplot() +
-    ggplot2::geom_sf(data = course_data, aes(fill = color), color = "black") +
+    ggplot2::geom_sf(data = course_data, ggplot2::aes(fill = color), color = "black") +
 
     # overlay greens to top
     ggplot2::geom_sf(data = dplyr::filter(course_data, grepl("_green$", polygon_name)),
