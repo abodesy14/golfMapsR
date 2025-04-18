@@ -86,7 +86,8 @@ update_course_rda_files <- function() {
   # save each to rda file
   for (cid in valid_courses) {
     course_data <- geojson_df %>% filter(api_id == cid)
-    save(course_data, file = paste0("data/rda/", cid, "_data.rda"))
+    course_data <- st_as_sf(course_data)
+    save(course_data, file = file.path("inst/extdata", paste0(cid, "_data.rda")))
   }
 
   message("✅ RDA files have been written by api_id")
