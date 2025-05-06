@@ -15,7 +15,16 @@ update_course_rda_files <- function() {
   # convert to sf
   geojson_df <- st_as_sf(kml_df, "POLYGON")
 
-  # read course database
+  # print invalid polygons if edges ever cross
+  invalid_geoms <- geojson_df %>%
+    filter(!st_is_valid(geometry))
+
+  if (nrow(invalid_geoms) > 0) {
+    message("Invalid geometries found:")
+    print(invalid_geoms$polygon_name)
+  }
+
+  # read course db
   course_db <- read.csv("data/mapped_course_list/mapped_courses.csv")
   course_db$course_name <- gsub("_", " ", course_db$course_name_raw)
   course_db$course_name <- tools::toTitleCase(course_db$course_name)
@@ -29,8 +38,17 @@ update_course_rda_files <- function() {
   geojson_df$course_name_raw <- sub("^(.+)_hole.*", "\\1", geojson_df$polygon_name)
 
   # join with course database
-  # transform so maps directionally will point north
   geojson_df <- left_join(geojson_df, course_db, by = "course_name_raw")
+
+  # temp transform to get latitude/longitude from centroids
+  # this will be passed to google maps api to get elevation data
+  geojson_df <- st_transform(geojson_df, crs = 4326)
+  geojson_df$centroid <- st_centroid(geojson_df$geometry)
+  coords <- st_coordinates(geojson_df$centroid)
+  geojson_df$longitude <- coords[, 1]
+  geojson_df$latitude <- coords[, 2]
+
+  # transform back to UTM for distance-based math and so that maps point north
   geojson_df <- st_transform(geojson_df, "+proj=utm +zone=15 +datum=WGS84")
 
   # assign colors and course_element descriptors
