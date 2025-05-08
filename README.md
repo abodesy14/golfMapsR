@@ -17,9 +17,15 @@ library(golfMapsR)
 ```
 
 ## Functions:
-- ```get_mapped_courses()``` : Start here to get a list of mapped courses. The returned table includes an api_id for each course, which can be used as inputs to the other functions for retrieving or plotting specific courses.
-- ```get_polygon_data(api_id)``` : Retrieves polygon level data for a given golf course. This returns an sf object with the type of polygon, square footage of the polygon, the course, hole number, distance to the green from each polygon, etc. The distance calculation is math-based and uses a “as the crow flies” method (straight line distance between centroids). Metrics such as average green size and number of bunkers can be calculated from this data.
-- ```plot_course(api_id, hole_num)``` : Plots a full golf course for the api_id supplied and hole numbers supplied. If no argument is entered for hole_num, the whole course will be plotted. Here's an example of how you can plot <strong>Amen Corner</strong> at Augusta: <br> <br>
+- ```get_mapped_courses()``` : Start here to get a list of mapped courses. Returns a table of all mapped golf courses, each with a unique api_id used as input for retrieving or plotting course-specific data.
+- ```get_polygon_data(api_id)``` : Returns polygon-level data for a given golf course. The function outputs an sf object containing detailed geospatial and descriptive information for all course features, including:
+
+  - Type of polygon (e.g., tee box, fairway, bunker, hazard, water, green)
+  - Square footage and area of each polygon
+  - Latitude and longitude (from polygon centroids)
+  - Course and hole number
+  - Distance to the green from each polygon (straight-line “as the crow flies” calculation between centroids)
+- ```plot_course(api_id, hole_num)``` : Plots a golf course or selected holes (e.g., 1:18, c(2, 8, 13, 15)) based on the provided api_id, which uniquely identifies the course. If no argument is entered for hole_num, the entire course will be plotted. Here's an example of how you can plot <strong>Amen Corner</strong> at Augusta National: <br> <br>
 ```plot_course(api_id = "30000000", hole_num = c(11,12,13))```
 
 <p align="left">
